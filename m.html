@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+            min-height: 100vh;
+        }
+
+
+        .search-box {
+            background-color: #ffffff;
+            border-radius: 30px;
+        }
+
+        .search-box .search-text {
+            border: none;
+            outline: none;
+            background: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            width: 0;
+        }
+        .search-box:hover .search-text
+        {
+            width: 300px;
+            padding: 10px 15px;
+        }
+        .search-box .search-btn {
+            background-color: none;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 50%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <form action="" class="search-box">
+        <input type="text" class="search-text">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+</body>
+
+</html>

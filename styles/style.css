@@ -1,0 +1,988 @@
+* {
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    outline: none;
+    border: none;
+}
+
+body {
+    background: linear-gradient(to right, #c7c7dd, #49575c, #59a8ca);
+}
+
+.wapper {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------------------------------------HEADER-------------------------------------------------------- */
+.header .logo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    position: sticky;
+    top: 1;
+}
+
+.logo img {
+    width: 100px;
+}
+
+/* -------------------------------------------------------------------HEADER-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------NAV-------------------------------------------------------- */
+
+.nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8a8a8a;
+    position: sticky;
+    top: 1;
+}
+
+.nav ul {
+    display: flex;
+    padding: 0;
+}
+
+.nav ul li {
+    padding-left: 100px;
+    list-style: none;
+}
+
+.nav ul a {
+    text-decoration: none;
+    line-height: 70px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.nav .icon {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.nav .icon i {
+    padding-right: 30px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.nav i:hover {
+    color: #ffffff;
+}
+
+.nav a:hover {
+    color: #ffffff
+}
+
+/* -------------------------------------------------------------------NAV-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------BANNER-------------------------------------------------------- */
+.banner .logobanner {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: #e0e0e0; */
+    background: linear-gradient(to right, #c7c7dd, #49575c, #59a8ca);
+
+}
+
+.Feature {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 600px;
+}
+
+.features .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.heading {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    color: black;
+}
+
+.heading span {
+    background: var(--orange);
+    color: #000000;
+    display: inline-block;
+    padding: 10px 17px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    /* padding-left: 80px; */
+    border: solid;
+}
+
+.box img {
+    padding-left: 120px;
+}
+
+.box .space1 {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.box .space {
+    text-align: center;
+}
+
+.box p {
+    text-align: center;
+}
+
+.box:hover {
+    border: solid;
+    background-color: #e0e0e0;
+}
+
+.box .space {
+    padding-top: 30px;
+}
+
+
+.box .btn {
+    border: solid;
+    margin: 30px;
+    padding: 10px 172px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.box .btn:hover {
+    border: solid;
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+/* -------------------------------------------------------------------BANNER-------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------------------BOX-CONTENT-------------------------------------------------------- */
+.content {
+    background-color: #e0e0e0;
+}
+
+/* sidebar */
+.sidebar {
+    height: 900px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+}
+
+.content.container .row .col-md-8 {
+    padding: 0px;
+}
+
+.content.container .row .col-md-4 {
+    padding: 0px;
+}
+
+.content.container {
+    border: solid;
+    border-radius: 30px;
+}
+
+/* sidebar */
+
+
+/* menu_sidebar */
+.menu_sidebar {
+    /* background-color: #fffaee; */
+    padding: 0;
+}
+
+.menu_sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_sidebar ul li {
+    width: 355px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu_sidebar ul li:hover {
+    background-color: #e0e0e0;
+    border-radius: 30px;
+}
+
+.menu_sidebar li {
+    font-weight: bold;
+}
+
+.menu_sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu_sidebar .active a {
+    color: #000000;
+}
+
+.box-submenu {
+    /* display: none; */
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius: 30px;
+}
+
+.menu_sidebar ul li:hover .box-submenu {
+    display: block;
+}
+
+.menu_sidebar ul li:hover .box-submenu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_sidebar li .active {
+    padding-bottom: 400px;
+}
+
+
+/* body */
+
+
+.body {
+    height: 900px;
+    border-radius: 20px;
+    /* border: solid; */
+    /* background-color: #e4e4d8; */
+    /* background-color: #fffaee; */
+}
+
+.fast-food .food,
+.main-food .food {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu-food {
+    width: 900px;
+    height: 900px;
+}
+
+.menu-food h2 {
+    text-align: center;
+    padding-top: 20px;
+    color: #850f0f;
+    font-weight: bold;
+}
+
+.body {
+    /* background: linear-gradient(to right, #c7c7dd, #49575c, #59a8ca); */
+    background-color: #e0e0e0;
+}
+
+.body img {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+
+.food1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+ 
+.food1 .card .card-text i
+{
+    color: yellow;
+}
+.food1 .card .card-text
+{
+    color: #ed2f2f;
+}
+.fast-food h2 {
+    text-align: center;
+}
+
+.main-food h2 {
+    text-align: center;
+}
+
+.fast-food h2 {
+    /* text-align: center; */
+    padding-top: 20px;
+}
+
+
+
+.food2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+.food3 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+
+.title h2 {
+    text-align: center;
+    font-size: 12px;
+    color: #850f0f;
+    padding: 0;
+}
+
+.title:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.title .card {
+    height: 300px;
+}
+
+.title .card h5 {
+    padding-top: 40px;
+}
+
+.title .card img {
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+}
+
+.title .card-body {
+    text-align: center;
+    padding-top: 0;
+}
+
+.body img {
+    width: 176px;
+    max-width: 100%;
+    height: 120px;
+    margin: 20px;
+    /* padding-left: 41px; */
+}
+
+.card-body a {
+    background-color: #333;
+    border-color: #000000;
+}
+
+.card-body a:hover {
+    background-color: rgb(31, 149, 209);
+    border-color: #ffffff;
+}
+/* body */
+.oder p {
+    color: white;
+}
+
+.oder .gap {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.oder .gap img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease-in-out 0.5s;
+}
+
+.oder .gap img:hover {
+    width: 40%;
+}
+
+/* -------------------------------------------------------------------BOX-CONTENT-------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------------------FOOTER-------------------------------------------------------- */
+
+.footer {
+    padding-top: 20px;
+    height: 390px;
+    width: 100%;
+    background-color: #fffaee;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer img {
+    padding-left: 30px;
+    padding-bottom: 15px;
+    width: 250px;
+}
+
+.footer ul li {
+    list-style: none;
+    width: 300px;
+    padding-top: 10px;
+}
+
+.info-left {
+    padding-top: 50px;
+    padding-right: 100px;
+    font-size: 15px;
+}
+
+.info-mid {
+    padding-top: 50px;
+    font-size: 15px;
+}
+
+.info-mid ul {
+    display: flex;
+
+}
+
+.info-mid ul li {
+    width: 160px;
+    padding: 0;
+}
+
+.info-mid h3 {
+    width: 100%;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+.info-right {
+    padding-top: 50px;
+    padding-left: 130px;
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+.info-right h3 {
+    font-weight: bold;
+}
+/*  */
+/* .icons { */
+    /* display: flex; */
+    /* padding-top: 0px; */
+    /* margin: 10px 0; */
+/* } */
+/*  */
+
+/* .icons a { */
+    /* text-align: center; */
+/* } */
+/*  */
+/* .icons i { */
+    /* padding-left: 30px; */
+    /* color: #000000; */
+/* } */
+/*  */
+
+.footer .contact
+{
+    padding: 20px;
+    display: flex;
+    font-size: 10px;
+}
+.footer input
+{
+    padding: 0 10px;
+    height: 32px;
+
+}
+.footer p
+{
+    padding: 10px 10px 0 20px;
+    justify-content: center;
+}
+.footer button
+{
+    height: 32px;
+    margin:0px 20px;
+}
+
+.fa-brands {
+    color: black;
+    transition: color 0.1s, transform 0.1s;
+    font-size: 40px
+}
+
+/* Khi trỏ chuột vào biểu tượng */
+/* .fa-brands:hover { */
+/* color: red; */
+/*  */
+/* transform: rotate(360deg); */
+/* transform: scale(1.4); */
+/* font-size: 40px; */
+/* } */
+/*  */
+/* .fa-instagram:hover { */
+/* color: rgb(171, 28, 197); */
+/* } */
+/*  */
+/* .fa-facebook:hover { */
+/* color: #006eff; */
+/* } */
+/*  */
+/* .fa-twitter:hover { */
+/* color: #1e90d7; */
+/* } */
+/*  */
+/* .fa-facebook-messenger:hover { */
+/* color: #d84bba; */
+/* } */
+/*  */
+
+
+/* -------------------------------------------------------------------FOOTER-------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------CONTACT-------------------------------------------------------- */
+.contact_fixed {
+    right: 1%;
+    background-color: #3a6ef3;
+    border-radius: 50%;
+    padding: 12px;
+    top: 76%;
+    position: fixed;
+    z-index: 999;
+    padding: 20px;
+}
+
+.contact_fixed:hover {
+    transform: scale(1.2);
+}
+
+.contact_fixed a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact_fixed a i {
+    animation: topDown 0.3s infinite;
+}
+
+.mxh-icon-show.show {
+    opacity: 1;
+}
+
+.mxh-icon-show {
+    opacity: 0;
+    transition: all 0.5s;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    z-index: 9999;
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* background: linear-gradient(135deg, #c30000, #ff8585); */
+    background: linear-gradient(135deg, #1159df, #4815ff);
+    box-shadow: #0055ff 0px 4px 24px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mxh-icon-show:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.ppocta-ft-fix {
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+    min-width: 32px;
+    text-align: center;
+    z-index: 99999;
+    /* bottom: 50px; */
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.ppocta-ft-fix i {
+    justify-items: center;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+#facebookButton {
+    /* display: inline-block; */
+    margin-right: 10px;
+    width: 0px;
+    /* background: #5ac5ef;    */
+    border-radius: 50%;
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7);
+    margin: 10px;
+}
+#facebookButton i:hover
+{
+    color: #0055ff;
+}
+#instagramButton {
+    /* display: inline-block; */
+    margin-right: 10px;
+    width: 0px;
+    /* background: #5ac5ef; */
+    border-radius: 50%;
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7);
+    margin: 10px;
+}
+#instagramButton i:hover 
+{
+    color: palevioletred;
+}
+#messengerButton {
+    /* display: inline-block; */
+    margin-right: 10px;
+    width: 0px;
+    /* background: #5ac5ef; */
+    border-radius: 50%;
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7);
+    margin: 10px;
+
+}
+#messengerButton i:hover
+{
+    color: #60024b;
+}
+#twitterButton {
+    display: inline-block;
+    margin-right: 10px;
+    width: 0px;
+    /* background: #5ac5ef; */
+    border-radius: 50%;
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7);
+
+}
+
+#twitterButton i:hover
+{
+    color: #04118a;
+}
+
+/* -------------------------------------------------------------------CONTACT-------------------------------------------------------- */
+
+
+/* ========================================================================== */
+@media screen and (max-width: 768px) {
+    .wapper {
+        width: 100%;
+    }
+
+    .header .logo {
+        align-items: center;
+        background-color: #e0e0e0;
+    }
+
+    .header .logo h1 {
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: #850f0f;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        /* Căn giữa các thành phần */
+        background-color: #8a8a8a;
+        font-size: 8px;
+        height: 50px;
+    }
+
+    .nav ul {
+        /* flex-direction: column; */
+        display: flex;
+        /* Chuyển sang hiển thị dạng dọc */
+        padding: 0;
+    }
+
+    .nav ul li {
+        padding: 20px 10px 0 8px;
+        /* Điều chỉnh khoảng cách giữa các mục menu */
+    }
+
+    .nav ul a {
+        line-height: 1;
+        /* Giảm khoảng cách dòng giữa các mục menu */
+        font-size: 12px;
+        /* Giảm kích thước font chữ */
+    }
+
+    .nav .icon {
+        padding: 17px 10px;
+        /* Điều chỉnh khoảng cách giữa menu và các icon */
+        text-align: center;
+        /* Căn giữa các icon */
+    }
+
+    .nav .icon i {
+        padding: 0 10px;
+        /* Điều chỉnh khoảng cách giữa các icon */
+        font-size: 16px;
+        /* Giảm kích thước icon */
+    }
+
+
+    .row {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x)* .5);
+        padding-left: calc(var(--bs-gutter-x)* .5);
+        margin-top: var(--bs-gutter-y);
+    }
+
+    /* banner */
+    .banner img {
+        width: 130px;
+    }
+
+    .banner .logobanner {
+        /* flex-direction: column; Chuyển sang hiển thị dạng dọc */
+        align-items: center;
+        /* Căn giữa các thành phần */
+        justify-content: space-around;
+        height: 120px;
+        padding-bottom: 0;
+    }
+
+    .logobanner div {
+        margin-bottom: 20px;
+        /* Khoảng cách giữa các hình ảnh */
+    }
+
+    .heading {
+        padding-top: 0;
+        font-size: 30px;
+    }
+
+    .Feature {
+        height: auto;
+        /* Đặt chiều cao tự động */
+        padding: 30px;
+        /* Thêm padding */
+    }
+
+    .Feature .box .space {
+        justify-content: center;
+    }
+
+    .features .box-container {
+        grid-template-columns: 1fr;
+        /* Chuyển sang hiển thị dạng cột */
+        gap: 1rem;
+        /* Điều chỉnh khoảng cách giữa các box */
+    }
+
+    .box {
+        padding-left: 20px;
+        /* Xóa padding bên trái */
+        text-align: center;
+        /* Căn giữa nội dung */
+        font-size: 10px;
+        justify-content: center;
+    }
+    .box img 
+    {
+        width: 100%;
+        padding: 0;
+    }
+    .box .btn {
+        padding: 10px 50px;
+        /* Điều chỉnh kích thước nút */
+        margin: 20px 0;
+        /* Điều chỉnh khoảng cách giữa các nút */
+        font-size: 10px;
+    }
+
+
+    /* box-content */
+    .sidebar span {
+        padding-left: 10px;
+        font-size: 19px;
+        color: #850f0f;
+    }
+
+    .menu_sidebar {
+        font-size: 10px;
+
+    }
+
+    .row {
+        padding-left: 35px
+    }
+
+    .menu_sidebar .box-submenu .submenu {
+        padding: 15px;
+    }
+
+    .menu_sidebar ul li {
+        /* padding-left: 92px; */
+
+        width: 410px;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .body {
+        width: 100%;
+        margin-top: 20px;
+        height: 3500px;
+    }
+
+    .fast-food {
+        padding: 0 20px;
+        /* Thêm padding cho phần fast-food */
+    }
+
+    .main-food {
+        /* display: none; */
+        padding: 0 20px;
+    }
+
+    .food1 {
+        flex-direction: column;
+        align-items: center;
+        /* Căn giữa các sản phẩm */
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .title .card {
+        width: 95%;
+        /* Chiếm toàn bộ chiều rộng của phần tử cha */
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .title {
+        align-items: center;
+    }
+
+    .title .card a {
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .title .card img {
+        width: 45%;
+        /* Chiếm toàn bộ chiều rộng của ảnh */
+        height: auto;
+        /* Chiều cao tự động tính theo tỉ lệ */
+        padding-top: 10px;
+    }
+
+
+    .title:hover {
+        display: none;
+    }
+
+    .oder {
+        display: none;
+    }
+
+    .oder .gap {
+        flex-wrap: wrap;
+        /* Cho phép các hình ảnh combo xuống dòng khi không đủ không gian */
+        justify-content: center;
+        /* Căn giữa các hình ảnh combo */
+        gap: 10px;
+        /* Khoảng cách giữa các hình ảnh combo */
+        height: auto;
+        /* Chiều cao tự động */
+        padding: 20px 0;
+        /* Thêm khoảng cách ở trên và dưới */
+    }
+
+    .oder .gap img {
+        width: 100%;
+        /* Chiếm toàn bộ chiều rộng của hình ảnh */
+        height: auto;
+        /* Chiều cao tự động tính theo tỉ lệ */
+        max-width: 100%;
+        /* Chiều rộng tối đa là 100% */
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding-left: 30px;
+    }
+
+    .footer .info-right {
+        padding-left: 34px;
+    }
+
+    .footer .icons i {
+        padding-left: 20px;
+    }
+
+    .ppocta-ft-fix i
+    {
+        font-size: 20px;
+    }
+
+    .contact_fixed i
+    {
+        font-size: 20px;
+    }
+}

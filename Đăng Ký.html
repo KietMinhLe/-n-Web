@@ -1,0 +1,205 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="scripts/index.js"></script>
+    <style>
+        body {
+            /* background: linear-gradient(to right, #0f0f27, #203a43, #2c5364); */
+            background: linear-gradient(to right, #c7c7dd, #49575c, #59a8ca);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #form {
+            width: 500px;
+            height: 650px;
+            margin: 30px auto 0 auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        #form h1 {
+            color: #0f2027;
+            text-align: center;
+        }
+
+        #form button {
+            padding: 12px;
+            margin-top: 20px;
+            width: 100%;
+            color: white;
+            background-color: rgb(41, 57, 194);
+            border: none;
+            border-radius: 4px;
+        }
+
+        #form button:hover {
+            background-color: #0f2027;
+            color: #09c372;
+        }
+
+        .input-control {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+
+        .input-control span {
+            color: red;
+        }
+
+        .input-control input {
+            border: 2px solid #f0f0f0;
+            border-radius: 4px;
+            display: block;
+            font-size: 12px;
+            padding: 10px;
+            width: 95%;
+        }
+
+        .input-control input:focus {
+            outline: 0;
+        }
+
+        .input-control.success input {
+            border-color: #09c372;
+        }
+
+        .input-control.error input {
+            border-color: #ff3860;
+        }
+
+        .input-control .error {
+            color: #ff3860;
+            font-size: 9px;
+            height: 13px;
+        }
+
+        #form .back a {
+            text-align: center;
+            padding: 12px 146px;
+            font-size: 12px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: rgb(41, 57, 194);
+            border-radius: 5px;
+        }
+
+        #form .back a:hover {
+            background-color: #0f2027;
+            color: #09c372;
+        }
+
+        .check p {
+            padding: 5px;
+            height: 5px;
+        }
+
+        .check {
+            text-align: center;
+            font-size: 10px;
+            padding: 0px 10px;
+        }
+
+        .check a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .check span {
+            color: black;
+        }
+
+        .check input {
+            padding: 10px;
+        }
+
+        .content_register_socials {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 30px;
+        }
+
+        .btn--with--icon {
+            text-decoration: none;
+            font-size: 15px;
+            color: var(--black-color);
+            padding: 12px 50px;
+            background-color: rgb(225, 237, 248);
+            border-radius: 4px;
+        }
+
+        .content_register_socials-title-icon {
+            margin: 0 15px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wapper">
+            <form id="form" action="/" method="post">
+                <h1>Đăng Ký </h1>
+                <div class="input-control">
+                    <label for="username">Họ và Tên<span>*</span></label>
+                    <input id="username" name="username" type="text" placeholder="Nhập tên của bạn">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email<span>*</span></label>
+                    <input id="email" name="email" type="text" placeholder="Nhập email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password">Mật Khẩu<span>*</span></label>
+                    <input id="password" name="password" type="password" placeholder="Nhập 8 kí tự tối thiểu">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password2">Xác Nhận Mật Khẩu<span>*</span></label>
+                    <input id="password2" name="password2" type="password" placeholder="Xác nhận lại mật khẩu">
+                    <div class="error"></div>
+                </div>
+                <div class="check">
+                    <p><input type="radio"> Bằng việc đăng ký, bạn đã đồng ý với FoodWeb.online về </p>
+                    <p> <a href="">Điều khoản dịch vụ</a> <span>&</span><a href=""> Chính sách bảo mật</a></p>
+                </div>
+
+                <button type="submit">Đăng Ký</button>
+
+                <div class="content_register_socials">
+                    <span class="btn--with--icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span class="content_register_socials-title-icon">
+                            Kết nối với Facebook
+                        </span>
+                    </span>
+
+                    <span class="btn--with--icon">
+                        <i class="content_register_socials-icon fa-brands fa-google"></i>
+                        <span class="content_register_socials-title-icon">
+                            Kết nối với Google
+                        </span>
+                    </span>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

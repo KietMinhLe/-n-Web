@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .form-dang-ky {
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        .form-dang-ky label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-dang-ky input,
+        .form-dang-ky textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .form-dang-ky button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Đăng ký</h1>
+    </header>
+
+    <main>
+        <section class="form-dang-ky">
+            <h2>Đăng ký tài khoản</h2>
+            <form action="#">
+                <label for="ten">Họ và tên:</label>
+                <input type="text" id="ten" name="ten" required>
+                <div class="error-message" id="HoTenErrorMessage"></div>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="EmailErrorMessage"></div>
+
+
+                <label for="mat-khau">Mật khẩu:</label>
+                <input type="password" id="mat-khau" name="mat-khau" required>
+                <div class="error-message" id="MKErrorMessage"></div>
+
+
+                <label for="xac-nhan-mat-khau">Xác nhận mật khẩu:</label>
+                <input type="password" id="xac-nhan-mat-khau" name="xac-nhan-mat-khau" required>
+                <div class="error-message" id="XNMKErrorMessage"></div>
+
+
+                <button type="submit">Đăng ký</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [ Lê Minh Kiệt ]</p>
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        var hoten = ten.value.trim();
+        var email =email.value.trim();
+        var mk = mat-khau.value.trim();
+        var xnmk =xac-nhan-mat-khau.value.trim();
+        var isValid = true;
+
+        //Họ Tên
+        if(hoten =='')
+        {
+            HoTenErrorMessage.textContent ='Vui lòng nhập tên họ tên của bạn!';
+            isValid =false;
+        } else {
+            HoTenErrorMessage.textContent='';
+        }
+
+        //Email
+        if(email =='')
+        {
+            EmialErrorMessage.textContent='Vui lòng nhập email của bạn!';
+            isValid=false;
+        } else {
+            EmailErrorMessage.textContent ='';
+        }
+        //Mật Khẩu 
+        if(mk == '')
+        {
+            MKErrorMessage.textContent='Vui lòng nhập mật khẩu!';
+            isValid=false;
+        } else {
+            MKErrorMessage.textContent=''
+        }
+        //Xác nhận MK
+        if(xnmk == '')
+        {
+            XNMKErrorMessage.textContent ='Vui lòng xác nhận lại mật khẩu!';
+            isValid=false;
+        } else 
+        {
+            XNMKErrorMessage.textContent='';
+        }
+        if(isValid)
+        {
+            alert('Bạn Đã Đăng Kí Thành Công');
+        }
+        
+    </script>
+</body>
+
+</html>

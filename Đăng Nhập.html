@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+            background: linear-gradient(to right, #c7c7dd, #49575c, #59a8ca);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #form {
+            width: 300px;
+            height: 360px;
+            margin: 100px auto 0 auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        #form h1 {
+            color: #0f2027;
+            text-align: center;
+        }
+
+        #form button {
+            padding: 12px;
+            margin-top: 20px;
+            width: 100%;
+            color: white;
+            background-color: rgb(41, 57, 194);
+            border: none;
+            border-radius: 4px;
+        }
+
+        #form button:hover {
+            background-color: #0f2027;
+            color: #09c372;
+        }
+
+        .input-control {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+        }
+
+        .input-control input {
+            border: 2px solid #f0f0f0;
+            border-radius: 4px;
+            display: block;
+            font-size: 12px;
+            padding: 10px;
+            width: 92%;
+        }
+
+        .input-control input:focus {
+            outline: 0;
+        }
+
+        .input-control.success input {
+            border-color: #09c372;
+        }
+
+        .input-control.error input {
+            border-color: #ff3860;
+        }
+
+        .input-control .error {
+            color: #ff3860;
+            font-size: 9px;
+            height: 13px;
+        }
+
+        #form .back a {
+            text-align: center;
+            padding: 12px 125px;
+            font-size: 12px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: rgb(41, 57, 194);
+            border-radius: 5px;
+            width: 80%;
+        }
+
+        #form .back a:hover {
+            background-color: #0f2027;
+            color: #09c372;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wapper">
+            <form id="form" action="" method="post">
+                <h1>Đăng Nhập</h1>
+                <div class="input-control">
+                    <label for="username">username</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password">password</label>
+                    <input type="text" name="password" id="password">
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Đăng Nhập</button>
+                <br>
+                <br>
+                <div class="back">
+                    <a href="Đăng Ký.html">Đăng Ký</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

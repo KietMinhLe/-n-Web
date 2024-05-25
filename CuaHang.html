@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="scripts/bootstrap.min.js">
+    <link rel="stylesheet" href="styles/main1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .shop {
+            /* background-color: #d0d0d0; */
+            max-height: 4000px;
+        }
+
+        .pic1,
+        .pic2 {
+            flex: 1;
+            margin: 0 20px;
+            border: solid;
+        }
+
+        .shop .img .anh {
+            display: flex;
+        }
+
+        .shop .img .anh .pic1,
+        .pic2 {
+            padding-left: 240px;
+            padding-top: 30px;
+        }
+
+        .shop .img a {
+            padding-top: 0;
+            text-decoration: none;
+            color: rgb(255, 0, 0);
+        }
+
+        .shop .img h3 {
+            padding-left: 45px;
+            padding-bottom: 30px;
+        }
+
+
+        .shop .img img {
+            width: 200px;
+            margin: 30px;
+        }
+
+        .shop h2 {
+            padding-top: 50px;
+            padding-left: 130px;
+            /* color: #4de328; */
+        }
+
+        .menuff img {
+            width: 200px;
+            height: 151px;
+            margin: 20px;
+            border: solid;
+            border-radius: 100%;
+        }
+
+        .menuff .pizza {
+            padding: 0px 20px 25px 150px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        .menuff .pizza .sp {
+            height: 400px;
+            border: .1rem solid rgba(0, 0, 0, .3);
+            background-color: #000000;
+        }
+
+        .menuff .kimbap {
+            padding: 0px 20px 25px 150px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .menuff .kimbap .sp {
+            height: 400px;
+            border: .1rem solid rgba(0, 0, 0, .3);
+            background-color: #000000;
+        }
+
+        .menuff .hamburger {
+            padding: 0px 20px 25px 150px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        .menuff .hamburger .sp {
+            height: 400px;
+            border: .1rem solid rgba(0, 0, 0, .3);
+            background-color: #000000;
+        }
+
+        .menuff .menu h4 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .menu h2 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .sp
+        {
+            border-radius: 20px;
+        }
+        .sp a {
+            color: #000000;
+        }
+        .sp h5 
+        {
+            color: brown;
+        }
+        .sp i 
+        {
+            color: yellow;
+        }
+
+        .sp:hover {
+            transform: scale(1.1);
+        }
+
+        .shop .img h3:hover {
+            color: #4158b1;
+            transform: scale(1.1);
+        }
+
+        .infosp {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        button {
+            border-radius: 20px;
+            font-size: 25px;
+        }
+
+        button:hover {
+
+            background-color: #4158b1;
+        }
+
+        .oder h2 {
+            padding-left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wapper">
+        <div class="header">
+            <div class="logo">
+                <img class="anh" src="image/logo.png" alt="">
+                <h1 style="padding-top: 30px;"> Menu Thức Ăn</h1>
+                <img class="anh1" src="image/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="CuaHang.html">Cửa Hàng</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Liên Hệ</a></li>
+                    <li><a href="Support.html">Hỗ Trợ</a></li>
+                </ul>
+                <div class="icon">
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="DangNhap.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="banner">
+            <div class="logobanner">
+                <div class="left"> <img width="385px" src="image/banner_left.png" alt=""></div>
+                <div class="mid"> <img width="385px" src="image/banner_right.png" alt=""></div>
+                <div class="right"> <img width="385px" src="image/banner.png" alt=""></div>
+                <!-- <img width="345px" height="385px" src="image/food.png" alt=""> -->
+            </div>
+            <br>
+        </div>
+
+        <div class="shop">
+            <div class="img">
+                <h2><i class="fa-solid fa-list"></i> Thực <span>Đơn</span>
+                    <hr>
+                </h2>
+                <div class="anh">
+                    <div class="pic1">
+                        <img src="image/fastfood.png" alt="">
+                        <br>
+                        <a href="#fast-food">
+                            <h3>Món Ăn Nhanh</h3>
+                        </a>
+                    </div>
+                    <div class="pic2">
+                        <img src="image/mainfood.png" alt="">
+                        <br>
+                        <a href="#main-food">
+                            <h3>Món Ăn Chính</h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div id="fast-food" class="fast-food">
+                <h2 style="text-align:left ;"><i class="fa-solid fa-list"></i> Thức Ăn <span>Nhanh</span>
+                    <hr>
+                </h2>
+                <div class="menuff">
+                    <div class="menu">
+                        <h2 id="PIZZA"><i class="fa-solid fa-pizza-slice"></i> PIZZA <i class="fa-solid fa-pizza-slice"></i></h2>
+                        <div class="pizza">
+
+                            <div class="sp"> <a href="Thông tin sản phẩm/Thông tin.html"> <img src="image/pizza/Pizza BBQ Chicken.jpeg" alt=""></a>
+                                <h4>Pizza BBQ Chicken</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 69.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"> <a href=""> <img src="image/pizza/Pizza Hawaii.jpg" alt=""></a>
+                                <h4>Pizza Hawaii</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 75.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"> <img src="image/pizza/Pizza Mexicana.webp" alt="">
+                                <h4>Pizza BBQ Chicken</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 85.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"><a href=""> <img src="image/pizza/Pizza Pepperon.webp" alt=""></a>
+                                <h4>Pizza BBQ Chicken</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 45.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h2><i class="fa-solid fa-burger"></i> HAMBURGER <i class="fa-solid fa-burger"></i></h2>
+                        <div class="hamburger">
+
+                            <div class="sp"> <a href=""> <img src="image/Hamburger/Hamburger Hawaii.jpg" alt=""></a>
+                                <h4>Hamburger Hawaii</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 70.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"> <a href=""> <img src="image/Hamburger/Hamburger bơ đậu phộng.jpg"
+                                        alt=""></a>
+                                <h4>Hamburger đậu </h4>
+                                <div class="infosp">
+                                    <h5>Giá: 50.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"> <a href=""> <img src="image/Hamburger/Hamburger Mexico.jpg" alt=""></a>
+                                <h4>Hamburger Mexico</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 80.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"> <a href=""> <img src="image/Hamburger/Hamburger phô mai cổ điển.jpg"
+                                        alt=""></a>
+                                <h4>Hamburger phô mai</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 60.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>KIMBAP</h2>
+                        <div class="kimbap">
+
+                            <div class="sp"> <a href=""><img src="image/Kimbap/Kimbap chiên xù.jpg" alt=""></a>
+                                <h4>Kimbap chiên</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 35.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"> <a href=""> <img src="image/Kimbap/Kimbap truyền thống.jpg" alt=""></a>
+                                <h4>Kimbap truyền thống</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 35.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"><a href=""> <img src="image/Kimbap/Kimbap trứng cuộn.jpg" alt=""></a>
+                                <h4>Kimbap trứng cuộn</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 45.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"> <a href=""> <img src="image/Kimbap/Kimbap thịt bò.jpg" alt=""></a>
+                                <h4>Kimbap thịt bò</h4>
+                                <div class="infosp">
+                                    <h5>Giá:  100.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-food" class="main-food">
+                <h2 style="text-align: left;"><i class="fa-solid fa-list"></i> Thức Ăn <span>Chính</span>
+                    <hr>
+                </h2>
+                <div class="menuff">
+                    <div class="menu">
+                        <h2><i class="fa-solid fa-bowl-rice"></i> Cơm <i class="fa-solid fa-bowl-rice"></i></h2>
+                        <div class="pizza">
+                            <div class="sp"> <a href=""> <img src="image/Com/cơm tấm đầy đủ.jpg" alt=""></a>
+                                <h4>Cơm Tấm Đầy Đủ</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 45.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"><a href=""> <img src="image/Com/cơm tấm bì chả.jpg" alt=""></a>
+                                <h4>Cơm Tấm Bì Chả</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 25.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"> <a href=""> <img src="image/Com/gà chiên.webp" alt=""></a>
+                                <h4>Cơm Gà Chiên</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 32.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"> <a href=""> <img src="image/Com/gà hấp.jpg" alt=""></a>
+                                <h4>Cơm Gà Luộc</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 35.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>Món Nước</h2>
+                        <div class="hamburger">
+                            <div class="sp"> <a href=""> <img src="image/MonNuoc/Phở.jpg" alt=""></a>
+                                <h4>Phở</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 40.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"><a href=""> <img src="image/MonNuoc/Hủ Tiếu.jpg" alt=""></a>
+                                <h4> Hủ Tiếu</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 30.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"><a href=""> <img src="image/MonNuoc/Bún Riêu.jpg" alt=""></a>
+                                <h4>Bún Riêu</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 30.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"><a href=""> <img src="image/MonNuoc/Mì Nước.jpg" alt=""></a>
+                                <h4>Mì Nước</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 25.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>Món Chiên</h2>
+                        <div class="kimbap">
+                            <div class="sp"><a href=""> <img src="image/MonChien/Mì Chiên.jpg" alt=""></a>
+                                <h4>Mì Chiên</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 20.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"><a href=""> <img src="image/MonChien/Mực Chiên.jpg" alt=""></a>
+                                <h4>Mực Chiên</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 30.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"><a href=""> <img src="image/MonChien/Thịt Chiên.jpg" alt=""></a>
+                                <h4>Thịt Chiên</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 30.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                            <div class="sp"><a href=""> <img src="image/MonChien/Tôm Chiên.jpg" alt=""></a>
+                                <h4>Tôm Chiên</h4>
+                                <div class="infosp">
+                                    <h5>Giá: 35.000đ</h5>
+                                    <h5>Trạng Thái : Còn</h5>
+                                    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></h5>
+                                    <br>
+                                    <button>Mua Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="oder">
+                <h2><i class="fa-solid fa-list"></i> Món <span>Tráng Miệng</span>
+                    <hr>
+                </h2>
+                <div class="gap">
+                    <img src="image/Combo/combo7.jpg" alt="">
+                    <img src="image/Combo/combo8.webp" alt="">
+                    <img src="image/Combo/combo9.jpg" alt="">
+                    <img src="image/Combo/combo10.jpg" alt="">
+                    <img src="image/Combo/Combo11.jpg" alt="">
+                    <img src="image/Combo/combo12.jpg" alt="">
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <br>
+            <div class="footer">
+                <div class="info-left">
+                    <a href=""><img src="image/footer.png" alt=""></a>
+                    <ul>
+                        <li>Address: 180 Cao Lỗ Phường 4</li>
+                        <li>Quận 8 Tp.HCM</li>
+                        <li>Phone: 0901234567</li>
+                        <li>Email: hello@BookStore.com</li>
+                    </ul>
+                </div>
+                <div class="info-mid">
+                    <h3>Yêu cầu hỗ trợ</h3>
+                    <ul>
+                        <li>Về chúng tôi</li>
+                        <li>Bảo mật </li>
+                    </ul>
+                    <ul>
+                        <li>Hồ sơ trang web</li>
+                        <li>Hỗ trợ </li>
+                    </ul>
+                    <ul>
+                        <li>Liên hệ</li>
+                        <li>Lời cảm ơn</li>
+                    </ul>
+                </div>
+                <div class="info-right">
+                    <h3>Liên hệ với chúng tôi</h3>
+                    <p>
+                        Nhận thông tin cập nhật qua E-mail về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.
+                    </p>
+                    <div class="icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="contact_fixed"> -->
+            <!-- <div class="tel"> -->
+                <!-- <a href="tel:0327733661"> -->
+                    <!-- <i class="fa-solid fa-phone"></i> -->
+                <!-- </a> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <div class="mxh-icon-show show">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+</body>
+
+</html>

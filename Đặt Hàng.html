@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt hàng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="scripts/indexDatHang.js"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: sans-serif;
+    }
+
+    .container {
+      width: 25%;
+      margin: 0 auto;
+      padding: 25px;
+      border: 1px solid #ccc;
+    }
+
+    h1,h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: whitesmoke;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: whitesmoke;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .product-list {
+      margin-bottom: 20px;
+    }
+
+    .product-item {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .product-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .product-name {
+      font-weight: bold;
+    }
+
+    .product-price {
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .order-summary {
+      text-align: right;
+      margin-top: 20px;
+      color: whitesmoke;
+    }
+
+    .success-message {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .form-group.success input {
+      border-color: #09c372;
+    }
+
+    .form-group.error input {
+      border-color: #ff3860;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Đặt hàng</h1>
+    <form id="order-form">
+      <div class="form-group">
+        <label for="customer-name">Tên khách hàng:</label>
+        <input type="text" id="customer-name" name="customer-name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone-number">Số điện thoại:</label>
+        <input type="tel" id="phone-number" name="phone-number" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ:</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <h2>Sản phẩm</h2>
+      <div class="product-list" id="product-list">
+
+      </div>
+      <div class="order-summary">
+        <p>Tổng số lượng: <span id="total-quantity">0</span></p>
+        <p>Tổng giá tiền: <span id="total-price">0</span> VNĐ</p>
+      </div>
+      <button type="submit">Đặt hàng</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

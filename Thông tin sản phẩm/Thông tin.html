@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin</title>
+    <link rel="stylesheet" href="../scripts/bootstrap.min.js">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/main1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="../scripts/thanhtien.js"></script>
+    <style>
+        .information {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        .img {
+            height: 475px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .img img {
+            width: 400px;
+            height: 420px;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .title h3 {
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        .vote {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .vote .danhgia,
+        .soluong {
+            padding-left: 10px;
+        }
+
+        .vote .star i {
+            color: yellow;
+        }
+
+        .img .price {
+            border: 1px solid gray;
+            background-color: gray;
+            width: 575px;
+            padding: 10px;
+        }
+
+        .column {
+            font-size: 15px;
+        }
+
+        .column .column1 {
+            display: flex;
+        }
+
+        .column1 p {
+            padding-left: 12px;
+            margin: 20px;
+        }
+
+        .column2 p {
+            padding-left: 34px;
+        }
+
+        .column2 i {
+            padding-left: 20px;
+        }
+
+        .column3 {
+            padding-left: 34px;
+            display: flex
+        }
+
+        .column3 .tong {
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+
+        .column4 {
+            padding-top: 10px;
+            padding-left: 34px;
+        }
+
+        .product__detail--quantity {
+            padding: 10px 0;
+        }
+
+        .quantity_number-swap {
+            width: 50px;
+            border: none;
+        }
+
+        .btn {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            border: none;
+        }
+
+        .btn button {
+            height: 50px;
+            width: 160px;
+        }
+
+        .btn .giohang button {
+            background-color: #ffffff;
+            color: rgb(255, 0, 0);
+        }
+
+        .btn .dathang {
+            padding-left: 50px;
+        }
+
+        .btn .dathang button {
+            background-color: #ee4d2d;
+            color: #ffffff;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .infor {
+            padding-top: 40px;
+        }
+
+        .infor a {
+            text-decoration: none;
+            color: rgb(45, 86, 234);
+        }
+
+        .infor .chitiet {
+            display: flex;
+            padding: 10px;
+        }
+
+        .infor .chitiet .cot1 {
+            padding-right: 40px;
+            color: gray;
+        }
+
+        .infor h2 {
+            padding: 20px;
+            background-color: rgb(168, 166, 166);
+        }
+
+        .infor .mota {
+            display: flex;
+            padding: 10px;
+        }
+
+        .infor .mota .cot1 {
+            padding-right: 105px;
+            color: gray;
+        }
+
+        .maininfor h2 {
+            background-color: rgb(168, 166, 166);
+            padding: 20px;
+        }
+
+        ::placeholder {
+            font: inherit;
+            color: #e3e3e3;
+        }
+
+        .search {
+            display: inline-flex;
+            background-image: _inear-gradient(40deg, #111, #00fffc);
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 4px;
+            border: 1px solid #ffffff;
+            align-items: center;
+        }
+
+        .search :is(input, button) {
+            background: transparent;
+            color: inherit;
+            border: none;
+            outline: none;
+        }
+
+        .search-btn {
+            display: grid;
+            place-items: center;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            transition: color 0.25s;
+        }
+        .td
+        {
+            padding: 10px 10px 0 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wapper">
+        <div class="header">
+            <div class="logo">
+                <img class="anh" src="image/logo.png" alt="">
+                <h1 style="padding-top: 30px;"> Thức Ăn Dành Cho Bạn </h1>
+                <img class="anh1" src="../image/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">Trang Chủ</a></li>
+                    <li><a href="../CuaHang.html">Cửa Hàng</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="">Liên Hệ</a></li>
+                    <li><a href="#">Hỗ Trợ</a></li>
+                </ul>
+                <div class="icon">
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="../Đăng Ký.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="information">
+            <!-- </div> -->
+            <div class="img">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="../image/pizza/Pizza BBQ Chicken.jpeg" alt="">
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="title">
+                            <h3>Pizza BBQ Chicken</h3>
+                        </div>
+
+                        <div class="vote">
+                            <div class="star"> 5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></div>
+                            <div class="danhgia">| 100.00K đánh giá</div>
+                            <div class="soluong">| 2000 lượt bán</div>
+                        </div>
+                        <br>
+
+                        <div class="price">
+                            <h4>đ69.000</h4>
+                        </div>
+
+                        <div class="column">
+                            <div class="column1">
+                                <p>Chính Sách Trả Hàng</p>
+                                <p>Trả hàng 15 ngày</p>
+                                <p>Đổi trả miễn phí</p>
+                            </div>
+
+                            <div class="column2">
+                                <p>Vận chuyển : <i class="fa-solid fa-car"></i> Miễn phí giao hàng</p>
+                            </div>
+
+
+                            <table class="inputs">
+                                <tr>
+                                    <td class="td">Số lượng</td>
+                                    <td align="right"><input type="number" min="1"value="1" id="first"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td">Thành tiền</td>
+                                    <td align="right"><input type="text" id="total" readonly></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+
+                        <div class="btn">
+                            <div class="giohang">
+                                <button type="submit">Thêm Vào Giở Hàng </button>
+                            </div>
+                            <div class="dathang">
+                                <button type="submit"> Mua Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infor">
+                <h2>Chi Tiết Sản Phẩm</h2>
+                <div class="chitiet">
+                    <div class="cot1">
+                        <p>Danh mục</p>
+                        <p>Số lượng khuyến mãi</p>
+                        <p>Số lượng tồn kho</p>
+                        <p>Gửi từ</p>
+                    </div>
+                    <div class="cot2">
+                        <p><a href="../CuaHang.html">Thức ăn nhanh</a> > <a href="../CuaHang.html">Pizza</a> > <a href="../CuaHang.html">Pizza BBQ Chicken</a></p>
+                        <p>25</p>
+                        <p>2503</p>
+                        <p>Tây Ninh</p>
+                    </div>
+                </div>
+                <h2>Mô tả sản phẩm</h2>
+                <div class="mota">
+                    <div class="cot1">
+                        <p>Thành phần</p>
+                        <p>Hình dạng </p>
+                        <p>Trọng lượng </p>
+                        <p>Size</p>
+                    </div>
+                    <div class="cot2">
+                        <p>Đế bánh, nhân bánh và phô mai phủ, hải sản, xúc xích.</p>
+                        <p>Tròn </p>
+                        <p>500g</p>
+                        <p>size M (9.84") | size L (11.81")</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="maininfor">
+                <h2>Thông Tin </h2>
+                <p>Pizza là loại bánh có hình tròn được nướng lên với 3 thành phần chính là đế bánh, nhân bánh và phô
+                    mai phủ.
+                    Trong đó, đế bánh được chế biến từ quá trình ủ bột mì, nấm men và nước, sau đó được nhào nặn thành
+                    hình tròn.
+                    Phần topping pizza đa dạng gồm hải sản, xúc xích, phô mai, ….</p>
+                <p>là một loại bánh dẹt, tròn được chế biến từ bột mì, nấm men,... sau khi đã được ủ bột để nghỉ ít nhất
+                    24 tiếng
+                    đồng hồ và nhào nặn thành loại bánh có hình dạng tròn và dẹt, và được cho vào lò nướng chín trước
+                    khi ăn.</p>
+                <p>Thuật ngữ "pizza" lần đầu tiên được ghi nhận vào thế kỷ 10 trong một bản thảo Latin từ thị trấn Gaeta
+                    ở phía Nam Ý,
+                    thuộc vùng Lazio, gần biên giới với Campania. Raffaele Esposito thường được coi là cha đẻ của pizza
+                    hiện đại. <br> <br>
+                    Pizza hiện đại được phát minh ở Naples. Năm 2009, pizza Neapolitan được đăng ký với Liên minh châu
+                    Âu như một món ăn Đặc
+                    sản Truyền thống Được Bảo đảm. Năm 2017, nghệ thuật làm pizza Neapolitan đã được thêm vào danh sách
+                    Di sản văn hóa phi
+                    vật thể của UNESCO.
+                    Pizza và các biến thể của nó là một trong những thực phẩm phổ biến nhất trên thế giới. Pizza được
+                    bán tại nhiều nhà hàng
+                    , bao gồm các tiệm pizza chuyên nghiệp, nhà hàng Địa Trung Hải, thông qua giao hàng và dưới hình
+                    thức thực phẩm đường phố.
+                    <br> <br> Tại Ý, pizza được phục vụ tại nhà hàng được trình bày chưa cắt và được ăn bằng dao và nĩa.
+                    Trong môi trường
+                    không chính thống, nó được cắt thành từng miếng để ăn bằng tay.
+                    Năm 2017, thị trường pizza toàn cầu đạt 128 tỷ USD, và tại Mỹ, con số này là 44 tỷ USD, phân bố trên
+                    76.000 tiệm pizza.
+                    Tổng cộng, 13% dân số Mỹ từ hai tuổi trở lên đã tiêu thụ pizza vào bất kỳ ngày nào.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info-left">
+            <a href=""><img src="image/footer.png" alt=""></a>
+            <ul>
+                <li>Address: 180 Cao Lỗ Phường 4</li>
+                <li>Quận 8 Tp.HCM</li>
+                <li>Phone: 0901234567</li>
+                <li>Email: hello@BookStore.com</li>
+            </ul>
+        </div>
+        <div class="info-mid">
+            <h3>Yêu cầu hỗ trợ</h3>
+            <ul>
+                <li>Về chúng tôi</li>
+                <li>Bảo mật </li>
+            </ul>
+            <ul>
+                <li>Hồ sơ trang web</li>
+                <li>Hỗ trợ </li>
+            </ul>
+            <ul>
+                <li>Liên hệ</li>
+                <li>Lời cảm ơn</li>
+            </ul>
+        </div>
+        <div class="info-right">
+            <h3>Liên hệ với chúng tôi</h3>
+            <p style="color: black;">
+                Nhận thông tin cập nhật qua E-mail về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.
+            </p>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

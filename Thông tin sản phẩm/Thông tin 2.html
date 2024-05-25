@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin</title>
+    <link rel="stylesheet" href="../scripts/bootstrap.min.js">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/main1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .information {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        .img {
+            height: 420px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .img img {
+            width: 400px;
+            height: 420px;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .title h3 {
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        .vote {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .vote .danhgia,
+        .soluong {
+            padding-left: 10px;
+        }
+
+        .vote .star i {
+            color: yellow;
+        }
+
+        .img .price {
+            border: 1px solid gray;
+            background-color: gray;
+            width: 575px;
+            padding: 10px;
+        }
+
+        .column {
+            font-size: 15px;
+        }
+
+        .column .column1 {
+            display: flex;
+        }
+
+        .column1 p {
+            padding-left: 12px;
+            margin: 20px;
+        }
+
+        .column2 p {
+            padding-left: 34px;
+        }
+
+        .column2 i {
+            padding-left: 20px;
+        }
+
+        .column3 {
+            padding-left: 34px;
+        }
+
+        .product__detail--quantity {
+            padding: 10px 0;
+        }
+
+        .quantity_number-swap {
+            width: 50px;
+            border: none;
+        }
+
+        .btn {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            border: none;
+        }
+
+        .btn button {
+            height: 50px;
+            width: 160px;
+        }
+
+        .btn .giohang button {
+            background-color: #ffffff;
+            color: rgb(255, 0, 0);
+        }
+
+        .btn .dathang {
+            padding-left: 50px;
+        }
+
+        .btn .dathang button {
+            background-color: #ee4d2d;
+            color: #ffffff;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .infor {
+            padding-top: 40px;
+        }
+
+        .infor a {
+            text-decoration: none;
+            color: rgb(45, 86, 234);
+        }
+
+        .infor .chitiet {
+            display: flex;
+            padding: 10px;
+        }
+
+        .infor .chitiet .cot1 {
+            padding-right: 40px;
+            color: gray;
+        }
+
+        .infor h2 {
+            padding: 20px;
+            background-color: rgb(168, 166, 166);
+        }
+
+        .infor .mota {
+            display: flex;
+            padding: 10px;
+        }
+
+        .infor .mota .cot1 {
+            padding-right: 105px;
+            color: gray;
+        }
+
+        .maininfor h2 {
+            background-color: rgb(168, 166, 166);
+            padding: 20px;
+        }
+
+        ::placeholder {
+            font: inherit;
+            color: #e3e3e3;
+        }
+
+        .search {
+            display: inline-flex;
+            background-image: _inear-gradient(40deg, #111, #00fffc);
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 4px;
+            border: 1px solid #ffffff;
+            align-items: center;
+        }
+
+        .search :is(input, button) {
+            background: transparent;
+            color: inherit;
+            border: none;
+            outline: none;
+        }
+
+        .search-btn {
+            display: grid;
+            place-items: center;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            transition: color 0.25s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wapper">
+        <div class="header">
+            <div class="logo">
+                <img class="anh" src="image/logo.png" alt="">
+                <h1 style="padding-top: 30px;"> Thức Ăn Dành Cho Bạn </h1>
+                <img class="anh1" src="image/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="CuaHang.html">Cửa Hàng</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="">Liên Hệ</a></li>
+                    <li><a href="#">Hỗ Trợ</a></li>
+                </ul>
+                <div class="icon">
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="Đăng Ký.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="nav"> -->
+        <!-- <form action="" class="search"> -->
+        <!-- <input type="text" placeholder="Search" class="search-input"> -->
+        <!-- <button type="button" class="search-btn"></button> -->
+        <!-- <i class="ri-search-2-line"></i> -->
+        <!-- </form> -->
+
+        <div class="information">
+            <!-- </div> -->
+            <div class="img">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="../image/MonNuoc/Hủ Tiếu.jpg" alt="">
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="title">
+                            <h3>Hủ Tiếu</h3>
+                        </div>
+
+                        <div class="vote">
+                            <div class="star"> 5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></div>
+                            <div class="danhgia">| 100.00K đánh giá</div>
+                            <div class="soluong">| 2000 lượt bán</div>
+                        </div>
+                        <br>
+
+                        <div class="price">
+                            <h4>đ59.000</h4>
+                        </div>
+
+                        <div class="column">
+                            <div class="column1">
+                                <p>Chính Sách Trả Hàng</p>
+                                <p>Trả hàng 15 ngày</p>
+                                <p>Đổi trả miễn phí</p>
+                            </div>
+                            <div class="column2">
+                                <p>Vận chuyển : <i class="fa-solid fa-car"></i> Miễn phí giao hàng</p>
+                            </div>
+                            <div class="column3">
+                                <div class="product__detail--quantity">
+                                    <span>Số lượng: </span>
+                                    <input class="quantity_number-swap" type="number" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="btn">
+                            <div class="giohang">
+                                <button type="submit">Thêm Vào Giở Hàng </button>
+                            </div>
+                            <div class="dathang">
+                                <button type="submit"> Mua Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infor">
+                <h2>Chi Tiết Sản Phẩm</h2>
+                <div class="chitiet">
+                    <div class="cot1">
+                        <p>Danh mục</p>
+                        <p>Số lượng khuyến mãi</p>
+                        <p>Số lượng tồn kho</p>
+                        <p>Gửi từ</p>
+                    </div>
+                    <div class="cot2">
+                        <p><a href="../CuaHang.html"> Món Nước</a> > <a href="">Hủ Tiếu</a></p>
+                        <p>25</p>
+                        <p>25</p>
+                        <p>Tây Ninh</p>
+                    </div>
+                </div>
+                <h2>Mô tả sản phẩm</h2>
+                <div class="mota">
+                    <div class="cot1">
+                        <p>Thành phần</p>
+                        <p>Loại </p>
+                        <p>Sợi hủ tiếu </p>
+                        <p>Size</p>
+                    </div>
+                    <div class="cot2">
+                        <p>Tinh bột Khoai mì , nước súp , gia vị, đậu nành , cà rốt ,tiêu ,hành lá ,dầu thực vật</p>
+                        <p>Hủ tiếu nước | Hủ tiếu khô </p>
+                        <p>Sợi Mỹ Tho , sợ nam vang , sợi sa déc</p>
+                        <p>size nhỏ (dành cho trẻ em) | size Lớn (dành cho người lớn)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="maininfor">
+                <h2>Thông Tin </h2>
+                <p>Hủ tiếu (bắt nguồn từ tiếng Triều Châu “粿條” guê2diou5, âm Hán Việt: quả điều), còn được viết là hủ
+                    tíu
+                    (trong phương ngữ tiếng Việt miền Nam tiếu đồng âm với tíu), là món ăn dùng chế phẩm gạo dạng sợi
+                    của người
+                    Triều Châu và người Mân Nam, có nhiều điểm tương tự như sa hà phấn của người Quảng Đông và bản điều
+                    của người
+                    Khách Gia, được truyền nhập tới nhiều vùng ở trong và ngoài nước Trung Quốc, trở thành món ăn thường
+                    gặp ở
+                    vùng Hoa Nam Trung Quốc và khu vực Đông Nam Á như ở miền Nam Việt Nam, Campuchia, Lào, Thái Lan,
+                    Singapore, v.v.</p>
+                <p>Hủ tiếu phát triển rất mạnh ở miền Nam Việt Nam từ những năm 50, đặc biệt là tại Sài Gòn, rất dễ tìm
+                    thấy quán hủ
+                    tiếu trên đường phố hoặc xe hủ tiếu đẩy ở đầu hẻm. Có thể nói Hủ tiếu là món ăn đặc trưng tại
+                    đây, tương tự
+                    như phở ở Hà Nội hay bún bò tại Huế. Hủ tiếu thường là món ăn sáng hoặc ăn tối, người miền Nam ít ăn
+                    trưa với hủ tiếu.</p>
+                <p>Nguyên liệu chính của món hủ tiếu là bánh hủ tiếu, nước dùng chính là với thịt bằm nhỏ, lòng heo nấu
+                    cùng. Sau đó trụng
+                    sơ bánh hủ tiếu với nước dùng, rồi cho các nguyên liệu phụ vào như giá đỗ, hẹ, thịt bằm vào. Có thể
+                    ăn với thịt bò viên
+                    và tương ớt, tương đen.
+                    <br>
+                <p>
+                    Hủ tiếu thịnh hành ở Nam Bộ, và có nhiều loại hủ tiếu: <br>
+                    + Hủ tiếu Nam Vang: có 2 loại chính: hủ tiếu khô và hủ tiếu nước <br>
+                    + Hủ tiếu sa tế: có nguồn gốc từ người Tiều <br>
+                    + Hủ tiếu Mỹ Tho: có thêm tôm, mực, hải sản, ốc, đặc sản của Mỹ Tho <br>
+                    + Hủ tiếu Trung Hoa: có mùi xì dầu [cần dẫn nguồn] <br>
+                    + Hủ tiếu Sa Đéc: Làm từ bột tươi Sa Đéc, có hương thơm đặc trưng của làng bột gạo Sa Đéc, nơi duy
+                    nhất có nguồn nước với độ pH bằng 7 nên sợi hủ tiếu dai, thơm ngon đặc trưng. Các cơ sở sản xuất nổi
+                    tiếng: Hủ tiếu Lãnh Nam Sa Đéc, Bà Năm Sa Đéc, Hòa Hưng, Bích Chi,... <br>
+                    + Hủ tiếu gõ: Hủ tiếu bán dạo bình dân, gồm hủ tiếu bò viên, hủ tiếu nạc (thịt heo), giò. Tên gọi bắt
+                    nguồn từ những xe đẩy bán hủ tiếu có một bộ dụng cụ gồm hai thanh gỗ hoặc kim loại gõ vào nhau để
+                    phát ra âm thanh đặc trưng, dễ nhận biết thay cho tiếng rao.
+                    Hủ tiếu mực <br>
+                    Tất cả các loại hủ tiếu trên đều có thể tìm thấy ở Thành phố Hồ Chí Minh và các tỉnh thành khác tại
+                    Việt Nam.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info-left">
+            <a href=""><img src="image/footer.png" alt=""></a>
+            <ul>
+                <li>Address: 180 Cao Lỗ Phường 4</li>
+                <li>Quận 8 Tp.HCM</li>
+                <li>Phone: 0901234567</li>
+                <li>Email: hello@BookStore.com</li>
+            </ul>
+        </div>
+        <div class="info-mid">
+            <h3>Yêu cầu hỗ trợ</h3>
+            <ul>
+                <li>Về chúng tôi</li>
+                <li>Bảo mật </li>
+            </ul>
+            <ul>
+                <li>Hồ sơ trang web</li>
+                <li>Hỗ trợ </li>
+            </ul>
+            <ul>
+                <li>Liên hệ</li>
+                <li>Lời cảm ơn</li>
+            </ul>
+        </div>
+        <div class="info-right">
+            <h3>Liên hệ với chúng tôi</h3>
+            <p style="color: black;">
+                Nhận thông tin cập nhật qua E-mail về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.
+            </p>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
