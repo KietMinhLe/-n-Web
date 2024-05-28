@@ -1,0 +1,395 @@
+@media screen and (max-width: 768px) {
+    .wapper {
+        width: 100%;
+    }
+
+    .header .logo {
+        align-items: center;
+        background-color: #e0e0e0;
+    }
+
+    .header .logo h1 {
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: #850f0f;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        /* Căn giữa các thành phần */
+        background-color: #8a8a8a;
+        font-size: 8px;
+        height: 50px;
+    }
+
+    .nav ul {
+        /* flex-direction: column; */
+        display: flex;
+        /* Chuyển sang hiển thị dạng dọc */
+        margin: 0;
+    }
+
+    .nav ul li {
+        line-height: 50px;
+        /* Điều chỉnh khoảng cách giữa các mục menu */
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .nav ul a {
+        line-height: 1;
+        /* Giảm khoảng cách dòng giữa các mục menu */
+        font-size: 12px;
+        /* Giảm kích thước font chữ */
+    }
+
+    .nav .icon {
+        padding: 17px 0px;
+        /* Điều chỉnh khoảng cách giữa menu và các icon */
+        text-align: center;
+        /* Căn giữa các icon */
+    }
+
+    .nav .icon i {
+        padding: 0 5px;
+        /* Điều chỉnh khoảng cách giữa các icon */
+        font-size: 16px;
+        /* Giảm kích thước icon */
+    }
+
+
+    .row {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x)* .5);
+        padding-left: calc(var(--bs-gutter-x)* .5);
+        margin-top: var(--bs-gutter-y);
+    }
+
+    /* banner */
+    .banner img {
+        width: 110px;
+        padding-top: 5px;
+    }
+
+    .banner .logobanner {
+        /* flex-direction: column; Chuyển sang hiển thị dạng dọc */
+        align-items: center;
+        /* Căn giữa các thành phần */
+        justify-content: space-around;
+        height: 120px;
+        padding-bottom: 0;
+    }
+
+    .logobanner div {
+        margin-bottom: 20px;
+        /* Khoảng cách giữa các hình ảnh */
+    }
+
+    .heading {
+        padding-top: 0;
+        font-size: 30px;
+    }
+
+    .Feature {
+        height: auto;
+        /* Đặt chiều cao tự động */
+        padding: 30px;
+        /* Thêm padding */
+    }
+
+    .Feature .box .space {
+        justify-content: center;
+    }
+
+    .features .box-container {
+        grid-template-columns: 1fr;
+        /* Chuyển sang hiển thị dạng cột */
+        gap: 1rem;
+        /* Điều chỉnh khoảng cách giữa các box */
+    }
+
+    .box {
+        padding-left: 20px;
+        /* Xóa padding bên trái */
+        text-align: center;
+        /* Căn giữa nội dung */
+        font-size: 10px;
+        justify-content: center;
+    }
+
+    .box img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .box .btn {
+        padding: 10px 50px;
+        /* Điều chỉnh kích thước nút */
+        margin: 20px 0;
+        /* Điều chỉnh khoảng cách giữa các nút */
+        font-size: 10px;
+    }
+
+
+    /* box-content */
+    .sidebar span {
+        padding-left: 10px;
+        font-size: 19px;
+        color: #850f0f;
+    }
+
+    .menu_sidebar {
+        font-size: 10px;
+    }
+
+    .shop .img .anh .pic1
+    {
+        padding: 0;
+    }
+    .shop .img .anh .pic2
+    {
+        padding: 0;
+    }
+    .row {
+        padding-left: 35px
+    }
+
+    .menu_sidebar .box-submenu .submenu {
+        padding: 15px;
+    }
+
+    .menu_sidebar ul li {
+        /* padding-left: 92px; */
+
+        max-width: 310px;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .title:hover {
+        display: none;
+        transform: none;
+    }
+
+    .body {
+
+        margin-top: 20px;
+        height: 3500px;
+    }
+
+    .fast-food {
+        padding: 0 20px;
+        /* Thêm padding cho phần fast-food */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-food {
+        /* display: none; */
+        padding: 0 20px;
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .food1 {
+        flex-direction: column;
+        align-items: center;
+        /* Căn giữa các sản phẩm */
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .title .card {
+        width: 95%;
+        /* Chiếm toàn bộ chiều rộng của phần tử cha */
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .title {
+        align-items: center;
+    }
+
+    .title .card a {
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .title .card img {
+        width: 45%;
+        /* Chiếm toàn bộ chiều rộng của ảnh */
+        height: auto;
+        /* Chiều cao tự động tính theo tỉ lệ */
+        padding-top: 10px;
+    }
+
+    .card-body a:hover {
+        display: none;
+    }
+
+    .title:hover {
+        display: none;
+    }
+
+    .oder {
+        display: none;
+    }
+
+    .oder .gap {
+        flex-wrap: wrap;
+        /* Cho phép các hình ảnh combo xuống dòng khi không đủ không gian */
+        justify-content: center;
+        /* Căn giữa các hình ảnh combo */
+        gap: 10px;
+        /* Khoảng cách giữa các hình ảnh combo */
+        height: auto;
+        /* Chiều cao tự động */
+        padding: 20px 0;
+        /* Thêm khoảng cách ở trên và dưới */
+    }
+
+    .oder .gap img {
+        width: 100%;
+        /* Chiếm toàn bộ chiều rộng của hình ảnh */
+        height: auto;
+        /* Chiều cao tự động tính theo tỉ lệ */
+        max-width: 100%;
+        /* Chiều rộng tối đa là 100% */
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding-left: 30px;
+    }
+
+    .footer .info-right {
+        padding-left: 34px;
+    }
+
+    .footer .icons i {
+        padding-left: 20px;
+    }
+
+    .ppocta-ft-fix i {
+        font-size: 20px;
+    }
+
+    .contact_fixed i {
+        font-size: 20px;
+    }
+
+    /* Cửa Hàng  */
+    .shop h2 {
+        padding-left: 0;  
+    }
+
+    .nav ul li {
+        padding: 0px 5px;
+    }
+
+    .shop .img img {
+        width: 71px;
+    }
+
+    .shop .img .anh {
+        width: 10%;
+        max-width: 100%;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+
+
+    .shop .img h3 {
+        padding-left: 25px;
+    }
+
+    .menuff img {
+        width: 100%;
+        max-width: 160px;
+        height: 135px;
+        margin: 20px;
+        border: solid;
+        border-radius: 100%;
+    }
+
+    .menuff .pizza {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        /* padding: 0px 20px 25px 40px; */
+    }
+
+
+    .menuff .pizza .sp {
+        width: 200px;
+        margin: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .body {
+        margin-top: 20px;
+        height: 3500px;
+    }
+
+    .nav ul li
+    {
+        padding: 0 20px;
+        list-style: none;
+    }
+
+    .nav .icon 
+    {
+        padding: 0;
+        margin-top: 20px;
+        height: 50px;
+    }
+    .box {
+        /* padding-left: 80px; */
+        border: solid;
+        width: 100%;
+        max-width: 200px;
+        height: 480px;
+    }
+
+    .box .btn {
+        border: solid;
+        margin: 5px;
+        padding: 10px 32%;
+    }
+    .menu_sidebar ul li {
+        width: 100%;
+        display: none;
+
+    }
+
+
+
+    .title {
+        width: 100%;
+    }
+
+
+
+}

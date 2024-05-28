@@ -1,168 +1,190 @@
+/* Thiết lập các thuộc tính chung cho tất cả các phần tử trên trang */
 * {
-    box-sizing: border-box;
-    font-family: "Nunito Sans", sans-serif;
-    outline: none;
-    border: none;
+    box-sizing: border-box; /* Tính toán kích thước của phần tử bao gồm cả padding và border */
+    font-family: "Nunito Sans", sans-serif; /* Sử dụng font chữ "Nunito Sans" cho toàn bộ trang */
+    outline: none; /* Loại bỏ viền xung quanh khi phần tử được focus */
+    border: none; /* Loại bỏ viền của phần tử */
 }
 
-body {
-    background: linear-gradient(to right, #c7c7dd, #49575c, #59a8ca);
-}
-
+/* Phần tử wrapper chứa toàn bộ nội dung của trang */
 .wapper {
-    width: 1500px;
-    margin: 0 auto;
+    max-width: 1500px; /* Đặt chiều rộng của wrapper là 1500px */
+    margin: 0 auto; /* Căn giữa wrapper */
 }
-
 
 /* -------------------------------------------------------------------HEADER-------------------------------------------------------- */
+/* Phần header của trang */
 .header .logo {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    background-color: #e0e0e0;
-    position: sticky;
-    top: 1;
+    display: flex; /* Hiển thị logo và các phần tử khác trong header theo chiều ngang */
+    width: 100%; /* Độ rộng của header là 100% của phần tử cha */
+    justify-content: space-between; /* Canh trái và canh phải của các phần tử bên trong header */
+    background-color: #e0e0e0; /* Màu nền của header */
+    position: sticky; /* Header sẽ cố định ở đầu trang khi cuộn */
+    top: 1; /* Khoảng cách từ header đến đỉnh trang là 1px */
 }
 
+
 .logo img {
-    width: 100px;
+    width: 100px; /* Kích thước ảnh */
 }
 
 /* -------------------------------------------------------------------HEADER-------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------------NAV-------------------------------------------------------- */
-
+/* Phần điều hướng (nav) của trang */
 .nav {
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #8a8a8a;
-    position: sticky;
-    top: 1;
+    height: 70px; /* Chiều cao của thanh điều hướng */
+    display: flex; /* Hiển thị các phần tử trong nav theo chiều ngang */
+    justify-content: space-between; /* Canh trái và canh phải của các phần tử trong nav */
+    background-color: #8a8a8a; /* Màu nền của thanh điều hướng */
+    position: sticky; /* Thanh điều hướng cố định ở đầu trang khi cuộn */
+    top: 1; /* Khoảng cách từ thanh điều hướng đến đỉnh trang là 1px */
 }
 
 .nav ul {
-    display: flex;
-    padding: 0;
+    display: flex; /* Hiển thị logo và các phần tử khác trong header theo chiều ngang */
+    padding: 0;  /* Khoảng cách bằng 0 */
 }
 
+/* Định dạng các phần tử trong menu điều hướng */
 .nav ul li {
-    padding-left: 100px;
-    list-style: none;
+    padding: 0 34px; /* Khoảng cách bên trái của mỗi phần tử trong menu */
+    list-style: none; /* Loại bỏ dấu chấm li trước mỗi mục trong menu */
 }
 
+/* Định dạng cho các liên kết trong menu điều hướng */
 .nav ul a {
-    text-decoration: none;
-    line-height: 70px;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    line-height: 70px; /* Cao độ dòng chữ */
+    color: rgb(0, 0, 0); /* Màu chữ của các liên kết */
+    font-size: 20px; /* Kích thước chữ */
 }
 
+/* Định dạng cho biểu tượng trong menu điều hướng */
 .nav .icon {
-    padding-top: 20px;
-    padding-right: 20px;
+    padding-top: 20px; /* Khoảng cách từ biểu tượng đến phần tử trên */
+    padding-right: 20px; /* Khoảng cách từ biểu tượng đến phần tử bên phải */
 }
 
+/* Định dạng cho biểu tượng icon */
 .nav .icon i {
-    padding-right: 30px;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
+    padding-right: 30px; /* Khoảng cách từ biểu tượng đến phần tử bên phải */
+    font-size: 30px; /* Kích thước của biểu tượng */
+    color: rgb(0, 0, 0); /* Màu của biểu tượng */
 }
 
+/* Hiệu ứng khi di chuột qua biểu tượng */
 .nav i:hover {
-    color: #ffffff;
+    color: #ffffff; /* Màu của biểu tượng khi di chuột qua */
 }
 
+/* Hiệu ứng khi di chuột qua liên kết */
 .nav a:hover {
-    color: #ffffff
+    color: #ffffff; /* Màu của liên kết khi di chuột qua */
 }
 
 /* -------------------------------------------------------------------NAV-------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------------BANNER-------------------------------------------------------- */
+/* Định dạng cho phần banner của trang */
 .banner .logobanner {
+    display: flex; /* Hiển thị các phần tử trong banner theo chiều ngang */
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Canh đều các phần tử trong banner */
+    /* background-color: #e0e0e0; */ /* Màu nền của banner (bị chú thích) */
+    background: linear-gradient(to right, #c7c7dd, #49575c, #59a8ca); /* Gradient màu nền cho banner */
+}
+
+/* Định dạng cho phần Feature */
+.Feature {
+    background-color: #ffffff; /* Màu nền của phần Feature */
+    border-radius: 20px; /* Làm tròn góc của phần Feature */
+    height: 600px; /* Chiều cao của phần Feature */
+}
+
+/* Định dạng cho các box trong phần Feature */
+.features .box-container {
+    
     display: flex;
     justify-content: space-evenly;
-    /* background-color: #e0e0e0; */
-    background: linear-gradient(to right, #c7c7dd, #49575c, #59a8ca);
-
+    flex-wrap: wrap;
+    
 }
 
-.Feature {
-    background-color: #ffffff;
-    border-radius: 20px;
-    height: 600px;
-}
-
-.features .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
+/* Định dạng cho phần tiêu đề */
 .heading {
-    text-align: center;
-    padding: 20px;
-    padding-bottom: 10px;
-    font-size: 50px;
-    color: black;
+    text-align: center; /* Căn giữa tiêu đề */
+    padding: 20px; /* Khoảng cách từ lề của phần tử đến nội dung bên trong */
+    padding-bottom: 10px; /* Khoảng cách từ dưới tiêu đề đến nội dung bên trong */
+    font-size: 50px; /* Kích thước chữ của tiêu đề */
+    color: black; /* Màu chữ của tiêu đề */
 }
 
+/* Định dạng cho phần chứa tiêu đề */
 .heading span {
-    background: var(--orange);
-    color: #000000;
-    display: inline-block;
-    padding: 10px 17px;
+    background: var(--orange); /* Màu nền của phần tử span */
+    color: #000000; /* Màu chữ của phần tử span */
+    display: inline-block; /* Hiển thị phần tử span như một khối */
+    padding: 10px 17px; /* Khoảng cách từ lề trên và dưới của phần tử span */
 }
 
+/* Định dạng cho các box trong phần container */
 .box-container {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Hiển thị các box theo chiều ngang */
+    justify-content: space-between; /* Canh đều các box trong container */
 }
 
+/* Định dạng cho mỗi box */
 .box {
-    /* padding-left: 80px; */
-    border: solid;
+    /* padding-left: 80px; */ /* Khoảng cách từ lề trái của box đến nội dung bên trong (bị chú thích) */
+    border: solid; /* Đường viền của box */
+    width: 100%;
+    max-width: 333px;
 }
 
+/* Định dạng cho hình ảnh trong box */
 .box img {
-    padding-left: 120px;
+    width: 100%;
+    height: 225px;
 }
 
+/* Định dạng cho phần không gian 1 */
 .box .space1 {
-    text-align: center;
-    padding-top: 60px;
+    text-align: center; /* Căn giữa nội dung của không gian 1 */
+    padding-top: 30px; /* Khoảng cách từ lề trên của không gian 1 đến nội dung bên trong */
 }
 
+/* Định dạng cho phần không gian */
 .box .space {
-    text-align: center;
+    text-align: center; /* Căn giữa nội dung của không gian */
 }
 
+/* Định dạng cho đoạn văn bản trong box */
 .box p {
-    text-align: center;
+    text-align: center; /* Căn giữa nội dung của đoạn văn bản */
+    padding: 0 10px;
 }
 
+/* Hiệu ứng khi di chuột qua box */
 .box:hover {
-    border: solid;
-    background-color: #e0e0e0;
+    border: solid; /* Đường viền của box khi di chuột qua */
+    background-color: #e0e0e0; /* Màu nền của box khi di chuột qua */
 }
 
+/* Định dạng cho không gian trong box */
 .box .space {
-    padding-top: 30px;
+    padding-top: 30px; /* Khoảng cách từ lề trên của không gian đến nội dung bên trong */
 }
 
-
+/* Định dạng cho nút trong box */
 .box .btn {
-    border: solid;
-    margin: 30px;
-    padding: 10px 172px;
-    justify-items: center;
-    justify-content: center;
+    border: solid; /* Đường viền của nút */
+    margin: 20px; /* Khoảng cách giữa nút và các phần tử xung quanh */
+    /* padding: 10px 172px; Kích thước của nú */
+    padding: 10px 32%;
 }
-
 .box .btn:hover {
     border: solid;
     background-color: #000000;
@@ -175,258 +197,268 @@ body {
 
 
 /* -------------------------------------------------------------------BOX-CONTENT-------------------------------------------------------- */
+/* Định dạng cho phần nội dung */
 .content {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* Màu nền của phần nội dung */
 }
 
-/* sidebar */
+/* Định dạng cho sidebar */
 .sidebar {
-    height: 900px;
-    background-color: #e0e0e0;
-    border-radius: 20px;
+    height: 900px; /* Chiều cao của sidebar */
+    background-color: #e0e0e0; /* Màu nền của sidebar */
+    border-radius: 20px; /* Làm tròn góc của sidebar */
 }
 
+/* Định dạng cho các cột trong phần container */
 .content.container .row .col-md-8 {
-    padding: 0px;
+    padding: 0px; /* Xóa padding của cột 8/12 */
 }
 
 .content.container .row .col-md-4 {
-    padding: 0px;
+    padding: 0px; /* Xóa padding của cột 4/12 */
 }
 
+/* Định dạng cho container */
 .content.container {
-    border: solid;
-    border-radius: 30px;
+    border: solid; /* Đường viền của container */
+    border-radius: 30px; /* Làm tròn góc của container */
 }
 
-/* sidebar */
-
-
-/* menu_sidebar */
+/* Định dạng cho menu sidebar */
 .menu_sidebar {
-    /* background-color: #fffaee; */
-    padding: 0;
+    /* background-color: #fffaee; */ /* Màu nền của menu sidebar (bị chú thích) */
+    padding: 0; /* Reset các padding của menu sidebar */
 }
 
 .menu_sidebar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style: none; /* Ẩn danh sách kiểu chấm li */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
-
 .menu_sidebar ul li {
-    width: 355px;
-    margin-bottom: 10px;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
+    width: 355px; /* Độ rộng của mỗi mục trong menu sidebar */
+    margin-bottom: 10px; /* Khoảng cách dưới giữa các mục */
+    padding: 15px; /* Khoảng cách lề trong mỗi mục */
+    border-radius: 5px; /* Làm tròn góc của mỗi mục */
+    text-align: center; /* Căn giữa nội dung trong mỗi mục */
 }
 
 .menu_sidebar ul li:hover {
-    background-color: #e0e0e0;
-    border-radius: 30px;
+    background-color: #e0e0e0; /* Màu nền khi di chuột qua mỗi mục */
+    border-radius: 30px; /* Làm tròn góc khi di chuột qua mỗi mục */
 }
 
 .menu_sidebar li {
-    font-weight: bold;
+    font-weight: bold; /* Định dạng đậm cho nội dung trong mỗi mục */
 }
 
 .menu_sidebar ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+    color: #333; /* Màu chữ của liên kết trong mỗi mục */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    font-weight: bold; /* Định dạng đậm cho liên kết trong mỗi mục */
 }
 
 .menu_sidebar .active a {
-    color: #000000;
+    color: #000000; /* Màu chữ của liên kết được chọn */
 }
 
+/* Định dạng cho submenu */
 .box-submenu {
-    /* display: none; */
-    position: absolute;
-    background-color: #ffffff;
-    margin-top: 15px;
-    margin-left: -15px;
-    border-radius: 30px;
+    /* display: none; */ /* Ẩn submenu (bị chú thích) */
+    position: absolute; /* Vị trí tuyệt đối của submenu */
+    background-color: #ffffff; /* Màu nền của submenu */
+    margin-top: 15px; /* Khoảng cách từ trên xuống của submenu */
+    margin-left: -15px; /* Khoảng cách từ trái sang của submenu */
+    border-radius: 30px; /* Làm tròn góc của submenu */
 }
 
+/* Hiển thị submenu khi di chuột qua mỗi mục */
 .menu_sidebar ul li:hover .box-submenu {
     display: block;
 }
 
+/* Hiển thị menu con khi di chuột qua mỗi mục */
 .menu_sidebar ul li:hover .box-submenu ul {
     display: block;
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
+/* Định dạng cho mục được chọn */
 .menu_sidebar li .active {
-    padding-bottom: 400px;
+    padding-bottom: 400px; /* Khoảng cách dưới của mục được chọn */
 }
 
 
 /* body */
 
-
+/* Định dạng cho phần nội dung */
 .body {
-    height: 900px;
-    border-radius: 20px;
-    /* border: solid; */
-    /* background-color: #e4e4d8; */
-    /* background-color: #fffaee; */
+    height: 900px; /* Chiều cao của phần nội dung */
+    border-radius: 20px; /* Làm tròn góc của phần nội dung */
+    /* background-color: #e4e4d8; */ /* Màu nền của phần nội dung (bị chú thích) */
+    /* background-color: #fffaee; */ /* Màu nền của phần nội dung (bị chú thích) */
+    background-color: #e0e0e0; /* Màu nền của phần nội dung */
 }
 
+/* Định dạng cho các mục thức ăn nhanh và chính */
 .fast-food .food,
 .main-food .food {
-    display: inline-block;
-    margin-right: 10px;
+    display: inline-block; /* Hiển thị các mục thức ăn là các block nằm trên cùng một hàng */
+    margin-right: 10px; /* Khoảng cách phải giữa các mục */
 }
 
+/* Định dạng cho khung menu thức ăn */
 .menu-food {
-    width: 900px;
-    height: 900px;
+    width: 900px; /* Độ rộng của khung menu */
+    height: 900px; /* Chiều cao của khung menu */
 }
 
 .menu-food h2 {
-    text-align: center;
-    padding-top: 20px;
-    color: #850f0f;
-    font-weight: bold;
+    text-align: center; /* Căn giữa tiêu đề của khung menu */
+    padding-top: 20px; /* Khoảng cách từ phía trên đến tiêu đề */
+    color: #850f0f; /* Màu chữ của tiêu đề */
+    font-weight: bold; /* Định dạng đậm cho tiêu đề */
 }
 
-.body {
-    /* background: linear-gradient(to right, #c7c7dd, #49575c, #59a8ca); */
-    background-color: #e0e0e0;
-}
-
+/* Định dạng cho hình ảnh trong phần nội dung */
 .body img {
-    width: 400px;
-    height: 400px;
-    margin: 20px;
+    width: 400px; /* Độ rộng của hình ảnh */
+    height: 400px; /* Chiều cao của hình ảnh */
+    margin: 20px; /* Khoảng cách xung quanh hình ảnh */
 }
 
+/* Định dạng cho các mục thức ăn trong phần nội dung */
 .food1 {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
-    padding-top: 15px;
-    padding-right: 40px;
-    padding-left: 20px;
+    display: flex; /* Hiển thị các mục thức ăn theo chiều ngang */
+    justify-content: space-between; /* Căn chỉnh các mục thức ăn theo khoảng cách đều nhau */
+    flex-wrap: wrap;
+    padding-bottom: 30px; /* Khoảng cách dưới giữa các mục */
+    padding-top: 15px; /* Khoảng cách trên giữa các mục */
+    padding-right: 40px; /* Khoảng cách bên phải giữa các mục */
+    padding-left: 20px; /* Khoảng cách bên trái giữa các mục */
 }
- 
-.food1 .card .card-text i
-{
-    color: yellow;
+
+/* Định dạng cho các mục thức ăn trong phần nội dung */
+.food1 .card .card-text i {
+    color: yellow; /* Màu của icon trong mỗi mục thức ăn */
 }
-.food1 .card .card-text
-{
-    color: #ed2f2f;
+
+.food1 .card .card-text {
+    color: #ed2f2f; /* Màu chữ trong mỗi mục thức ăn */
 }
+
+/* Định dạng cho tiêu đề của thức ăn nhanh */
 .fast-food h2 {
-    text-align: center;
+    text-align: center; /* Căn giữa tiêu đề của thức ăn nhanh */
+    padding-top: 20px; /* Khoảng cách từ phía trên đến tiêu đề */
 }
 
-.main-food h2 {
-    text-align: center;
-}
-
-.fast-food h2 {
-    /* text-align: center; */
-    padding-top: 20px;
-}
-
-
-
+/* Định dạng cho các mục thức ăn tiếp theo */
 .food2 {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
-    padding-left: 40px;
+    display: flex; /* Hiển thị các mục thức ăn tiếp theo theo chiều ngang */
+    justify-content: space-between; /* Căn chỉnh các mục thức ăn tiếp theo theo khoảng cách đều nhau */
+    padding-bottom: 30px; /* Khoảng cách dưới giữa các mục */
+    padding-left: 40px; /* Khoảng cách bên trái giữa các mục */
 }
 
+/* Định dạng cho các mục thức ăn khác */
 .food3 {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 40px;
+    display: flex; /* Hiển thị các mục thức ăn khác theo chiều ngang */
+    justify-content: space-between; /* Căn chỉnh các mục thức ăn khác theo khoảng cách đều nhau */
+    padding-left: 40px; /* Khoảng cách bên trái giữa các mục */
 }
 
-
+/* Định dạng cho tiêu đề của mục thức ăn */
 .title h2 {
-    text-align: center;
-    font-size: 12px;
-    color: #850f0f;
-    padding: 0;
+    text-align: center; /* Căn giữa tiêu đề của mục thức ăn */
+    font-size: 12px; /* Cỡ chữ của tiêu đề */
+    color: #850f0f; /* Màu chữ của tiêu đề */
+    padding: 0; /* Xác định khoảng cách bên trong tiêu đề */
 }
 
+/* Hiệu ứng khi di chuột qua tiêu đề */
 .title:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+    cursor: pointer; /* Biến con trỏ thành hình cửa sổ khi di chuột qua tiêu đề */
+    transform: scale(1.1); /* Phóng to tiêu đề khi di chuột qua */
 }
 
+/* Hiệu ứng khi di chuột qua nút */
 .btn:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */ /* Phóng to nút khi di chuột qua (bị chú thích) */
 }
 
+/* Định dạng cho các thẻ card */
 .title .card {
-    height: 300px;
+    height: 300px; /* Độ cao của thẻ card */
 }
 
+/* Định dạng cho tiêu đề của thẻ card */
 .title .card h5 {
-    padding-top: 40px;
+    padding-top: 40px; /* Khoảng cách từ phía trên đến tiêu đề trong thẻ card */
 }
 
+/* Định dạng cho hình ảnh trong thẻ card */
 .title .card img {
-    padding: 0;
-    margin: 0;
-    justify-items: center;
+    padding: 0; /* Xác định khoảng cách bên trong hình ảnh */
+    margin: 0; /* Xác định khoảng cách xung quanh hình ảnh */
+    justify-items: center; /* Căn chỉnh hình ảnh giữa trong thẻ card */
 }
 
+/* Định dạng cho nội dung bên trong thẻ card */
 .title .card-body {
-    text-align: center;
-    padding-top: 0;
+    text-align: center; /* Căn chỉnh nội dung bên trong thẻ card vào giữa */
+    padding-top: 0; /* Xác định khoảng cách từ phía trên đến nội dung */
 }
 
+/* Định dạng cho hình ảnh trong phần nội dung */
 .body img {
-    width: 176px;
-    max-width: 100%;
-    height: 120px;
-    margin: 20px;
-    /* padding-left: 41px; */
+    width: 176px; /* Độ rộng của hình ảnh */
+    max-width: 100%; /* Độ rộng tối đa là 100% */
+    height: 120px; /* Chiều cao của hình ảnh */
+    margin: 20px; /* Khoảng cách xung quanh hình ảnh */
 }
 
+/* Định dạng cho các liên kết trong thẻ card */
 .card-body a {
-    background-color: #333;
-    border-color: #000000;
+    background-color: #333; /* Màu nền của liên kết */
+    border-color: #000000; /* Màu viền của liên kết */
 }
 
+/* Hiệu ứng khi di chuột qua liên kết trong thẻ card */
 .card-body a:hover {
-    background-color: rgb(31, 149, 209);
-    border-color: #ffffff;
+    background-color: rgb(31, 149, 209); /* Màu nền của liên kết khi di chuột qua */
+    border-color: #ffffff; /* Màu viền của liên kết khi di chuột qua */
 }
+
 /* body */
+/* Định dạng cho văn bản trong phần đặt hàng */
 .oder p {
-    color: white;
+    color: white; /* Màu văn bản là trắng */
 }
 
+/* Định dạng cho khoảng trống giữa các phần trong phần đặt hàng */
 .oder .gap {
-    width: 100%;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    width: 100%; /* Độ rộng của khoảng trống là 100% */
+    height: 450px; /* Độ cao của khoảng trống là 450px */
+    display: flex; /* Hiển thị các phần bên trong theo chiều ngang */
+    justify-content: center; /* Căn chỉnh các phần bên trong vào giữa */
+    gap: 10px; /* Khoảng cách giữa các phần */
 }
 
+/* Định dạng cho hình ảnh trong khoảng trống */
 .oder .gap img {
-    width: 10%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid white;
-    transition: all ease-in-out 0.5s;
+    width: 10%; /* Độ rộng của hình ảnh là 10% của phần */
+    height: 100%; /* Chiều cao của hình ảnh là 100% của phần */
+    object-fit: cover; /* Hiển thị hình ảnh mà không làm thay đổi tỉ lệ khung hình */
+    border-radius: 10px; /* Bo tròn góc của hình ảnh */
+    border: 2px solid white; /* Đường viền màu trắng cho hình ảnh */
+    transition: all ease-in-out 0.5s; /* Hiệu ứng chuyển đổi mịn màng trong 0.5s */
 }
 
+/* Hiệu ứng khi di chuột qua hình ảnh trong khoảng trống */
 .oder .gap img:hover {
-    width: 40%;
+    width: 40%; /* Phóng to hình ảnh lên 40% khi di chuột qua */
 }
 
 /* -------------------------------------------------------------------BOX-CONTENT-------------------------------------------------------- */
@@ -435,72 +467,78 @@ body {
 
 
 /* -------------------------------------------------------------------FOOTER-------------------------------------------------------- */
-
+/* Định dạng cho phần footer */
 .footer {
-    padding-top: 20px;
-    height: 390px;
-    width: 100%;
-    background-color: #fffaee;
-    border-radius: 25px;
-    display: flex;
-    justify-content: space-between;
+    padding-top: 20px; /* Khoảng cách phía trên là 20px */
+    height: 390px; /* Chiều cao của footer là 390px */
+    width: 100%; /* Độ rộng là 100% của phần */
+    background-color: #fffaee; /* Màu nền của footer */
+    border-radius: 25px; /* Bo tròn góc của footer */
+    display: flex; /* Hiển thị các phần bên trong theo chiều ngang */
+    justify-content: space-between; /* Căn chỉnh các phần bên trong theo chiều ngang và đều nhau */
 }
 
+/* Định dạng cho các liên kết trong footer */
 .footer a {
-    text-decoration: none;
-    color: black;
+    text-decoration: none; /* Loại bỏ gạch chân dưới các liên kết */
+    color: black; /* Màu văn bản của các liên kết là đen */
 }
 
+/* Định dạng cho hình ảnh trong footer */
 .footer img {
-    padding-left: 30px;
-    padding-bottom: 15px;
-    width: 250px;
+    padding-left: 30px; /* Khoảng cách từ bên trái của hình ảnh */
+    padding-bottom: 15px; /* Khoảng cách từ bên dưới của hình ảnh */
+    width: 250px; /* Độ rộng của hình ảnh là 250px */
 }
 
+/* Định dạng cho danh sách trong footer */
 .footer ul li {
-    list-style: none;
-    width: 300px;
-    padding-top: 10px;
+    list-style: none; /* Ẩn các dấu đầu dòng của danh sách */
+    width: 300px; /* Độ rộng của mỗi phần tử danh sách */
+    padding-top: 10px; /* Khoảng cách từ phía trên của mỗi phần tử danh sách */
 }
 
+/* Định dạng cho phần thông tin bên trái trong footer */
 .info-left {
-    padding-top: 50px;
-    padding-right: 100px;
-    font-size: 15px;
+    padding-top: 50px; /* Khoảng cách từ phía trên của phần thông tin bên trái */
+    padding-right: 100px; /* Khoảng cách từ phía bên phải của phần thông tin bên trái */
+    font-size: 15px; /* Cỡ chữ của phần thông tin bên trái */
 }
 
+/* Định dạng cho phần thông tin giữa trong footer */
 .info-mid {
-    padding-top: 50px;
-    font-size: 15px;
+    padding-top: 50px; /* Khoảng cách từ phía trên của phần thông tin giữa */
+    font-size: 15px; /* Cỡ chữ của phần thông tin giữa */
 }
 
 .info-mid ul {
-    display: flex;
-
+    display: flex; /* Hiển thị các phần bên trong theo chiều ngang */
 }
 
 .info-mid ul li {
-    width: 160px;
-    padding: 0;
+    width: 160px; /* Độ rộng của mỗi phần tử danh sách trong phần thông tin giữa */
+    padding: 0; /* Xóa khoảng cách giữa các phần tử danh sách */
 }
 
 .info-mid h3 {
-    width: 100%;
-    font-weight: bold;
-    padding-left: 30px;
-    padding-bottom: 15px;
+    width: 100%; /* Độ rộng của tiêu đề trong phần thông tin giữa */
+    font-weight: bold; /* Định dạng đậm cho tiêu đề trong phần thông tin giữa */
+    padding-left: 30px; /* Khoảng cách từ phía trái của tiêu đề */
+    padding-bottom: 15px; /* Khoảng cách từ phía dưới của tiêu đề */
 }
 
+/* Định dạng cho phần thông tin bên phải trong footer */
 .info-right {
-    padding-top: 50px;
-    padding-left: 130px;
-    font-size: 15px;
-    padding-right: 20px;
+    padding-top: 50px; /* Khoảng cách từ phía trên của phần thông tin bên phải */
+    padding-left: 130px; /* Khoảng cách từ phía bên trái của phần thông tin bên phải */
+    font-size: 15px; /* Cỡ chữ của phần thông tin bên phải */
+    padding-right: 20px; /* Khoảng cách từ phía bên phải của phần thông tin bên phải */
 }
 
 .info-right h3 {
-    font-weight: bold;
+    font-weight: bold; /* Định dạng đậm cho tiêu đề trong phần thông tin bên phải */
 }
+
 /*  */
 /* .icons { */
     /* display: flex; */
@@ -518,35 +556,39 @@ body {
     /* color: #000000; */
 /* } */
 /*  */
-
-.footer .contact
-{
-    padding: 20px;
-    display: flex;
-    font-size: 10px;
-}
-.footer input
-{
-    padding: 0 10px;
-    height: 32px;
-
-}
-.footer p
-{
-    padding: 10px 10px 0 20px;
-    justify-content: center;
-}
-.footer button
-{
-    height: 32px;
-    margin:0px 20px;
+/* Định dạng cho phần liên hệ trong footer */
+.footer .contact {
+    padding: 20px; /* Khoảng cách nội dung bên trong phần liên hệ */
+    display: flex; /* Hiển thị các phần tử bên trong theo chiều ngang */
+    flex-wrap: wrap; /* Cho phép các phần tử chuyển hàng khi không đủ không gian */
+    font-size: 10px; /* Cỡ chữ cho phần liên hệ */
 }
 
+/* Định dạng cho các trường nhập trong footer */
+.footer input {
+    padding: 0 10px; /* Khoảng cách giữa văn bản và biên của trường nhập */
+    height: 32px; /* Chiều cao của trường nhập */
+}
+
+/* Định dạng cho đoạn văn trong footer */
+.footer p {
+    padding: 10px 10px 0 20px; /* Khoảng cách từ các biên của đoạn văn */
+    justify-content: center; /* Căn giữa nội dung trong đoạn văn */
+}
+
+/* Định dạng cho nút trong footer */
+.footer button {
+    height: 32px; /* Chiều cao của nút */
+    margin: 0px 20px; /* Khoảng cách giữa các nút */
+}
+
+/* Định dạng cho biểu tượng các thương hiệu */
 .fa-brands {
-    color: black;
-    transition: color 0.1s, transform 0.1s;
-    font-size: 40px
+    color: black; /* Màu sắc của biểu tượng */
+    transition: color 0.1s, transform 0.1s; /* Hiệu ứng chuyển đổi màu và biến dạng */
+    font-size: 40px; /* Kích thước của biểu tượng */
 }
+
 
 /* Khi trỏ chuột vào biểu tượng */
 /* .fa-brands:hover { */
@@ -579,410 +621,144 @@ body {
 
 
 
-/* -------------------------------------------------------------------CONTACT-------------------------------------------------------- */
+/* -------------------------------------------------------------------CONTACT-------------------------------------------------------- *//* Định dạng cho biểu tượng mạng xã hội */
 .contact_fixed {
-    right: 1%;
-    background-color: #3a6ef3;
-    border-radius: 50%;
-    padding: 12px;
-    top: 76%;
-    position: fixed;
-    z-index: 999;
-    padding: 20px;
+    right: 1%; /* Khoảng cách từ viền phải của màn hình */
+    background: linear-gradient(135deg, #1159df, #4815ff); /* Màu nền của biểu tượng */
+    box-shadow: #0055ff 0px 4px 24px; /* Hiệu ứng bóng đổ */
+    border-radius: 50%; /* Đường viền cong */
+    padding: 12px; /* Khoảng cách giữa biểu tượng và nội dung bên trong */
+    top: 80%; /* Vị trí từ đỉnh của màn hình */
+    position: fixed; /* Phần tử cố định trên màn hình */
+    z-index: 999; /* Độ sâu của phần tử trên màn hình */
+    padding: 20px; /* Khoảng cách giữa biểu tượng và nội dung bên trong */
 }
 
 .contact_fixed:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* Hiệu ứng phóng to khi di chuột qua */
 }
 
 .contact_fixed a {
-    color: #fff;
-    font-size: 30px;
+    color: #fff; /* Màu của văn bản trong biểu tượng */
+    font-size: 20px; /* Kích thước của văn bản */
 }
 
 .contact_fixed a i {
-    animation: topDown 0.3s infinite;
+    animation: topDown 0.3s infinite; /* Hiệu ứng di chuyển của biểu tượng */
 }
 
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+/* Định dạng cho biểu tượng hiển thị mạng xã hội */
 .mxh-icon-show.show {
-    opacity: 1;
+    opacity: 1; /* Hiển thị biểu tượng */
 }
 
-.mxh-icon-show {
-    opacity: 0;
-    transition: all 0.5s;
-    position: fixed;
-    bottom: 50px;
-    right: 25px;
-    z-index: 9999;
-    height: 65px;
-    width: 65px;
-    line-height: 65px;
-    border-radius: 50%;
-    overflow: hidden;
-    /* background: linear-gradient(135deg, #c30000, #ff8585); */
-    background: linear-gradient(135deg, #1159df, #4815ff);
-    box-shadow: #0055ff 0px 4px 24px;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
+.mxh-icon-show { 
+    opacity: 0; /* Ẩn biểu tượng */
+    transition: all 0.5s; /* Hiệu ứng chuyển đổi */
+    position: fixed; /* Phần tử cố định trên màn hình */
+    bottom: 50px; /* Vị trí từ dưới của màn hình */
+    right: 25px; /* Vị trí từ phải của màn hình */
+    z-index: 9999; /* Độ sâu của phần tử trên màn hình */
+    height: 65px; /* Chiều cao của biểu tượng */
+    width: 65px; /* Chiều rộng của biểu tượng */
+    line-height: 65px; /* Độ cao của dòng */
+    border-radius: 50%; /* Đường viền cong */
+    overflow: hidden; /* Ẩn tràn nội dung */
+    background: linear-gradient(135deg, #1159df, #4815ff); /* Màu nền của biểu tượng */
+    box-shadow: #0055ff 0px 4px 24px; /* Hiệu ứng bóng đổ */
+    color: #fff; /* Màu của văn bản trong biểu tượng */
+    font-size: 20px; /* Kích thước của văn bản */
+    text-align: center; /* Căn chỉnh văn bản */
+    cursor: pointer; /* Con trỏ khi di chuột qua */
 }
 
 .mxh-icon-show:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Hiệu ứng phóng to khi di chuột qua */
 }
 
 
 
 
+/* Định dạng cho biểu tượng liên hệ cố định */
 .ppocta-ft-fix {
-    position: fixed;
-    bottom: 5px;
-    left: 10px;
-    min-width: 32px;
-    text-align: center;
-    z-index: 99999;
-    /* bottom: 50px; */
-    padding: 10px 0;
-    font-size: 20px;
+    position: fixed; /* Phần tử cố định trên màn hình */
+    bottom: 5px; /* Khoảng cách từ dưới của màn hình */
+    left: 10px; /* Khoảng cách từ trái của màn hình */
+    min-width: 32px; /* Độ rộng tối thiểu của phần tử */
+    text-align: center; /* Căn chỉnh văn bản */
+    z-index: 99999; /* Độ sâu của phần tử trên màn hình */
+    padding: 10px 0; /* Khoảng cách giữa các phần tử bên trong */
+    font-size: 20px; /* Kích thước của văn bản */
 }
 
 .ppocta-ft-fix i {
-    justify-items: center;
-    justify-content: center;
-    padding-top: 12px;
+    justify-items: center; /* Căn chỉnh vị trí của các phần tử */
+    justify-content: center; /* Căn chỉnh vị trí của các phần tử */
+    padding-top: 12px; /* Khoảng cách từ trên của phần tử */
 }
 
+/* Định dạng cho nút Facebook */
 #facebookButton {
-    /* display: inline-block; */
-    margin-right: 10px;
-    width: 0px;
-    /* background: #5ac5ef;    */
-    border-radius: 50%;
-    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7);
-    margin: 10px;
+    margin-right: 10px; /* Khoảng cách từ phải của nút */
+    width: 0px; /* Độ rộng của nút */
+    border-radius: 50%; /* Đường viền cong */
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7); /* Hiệu ứng bóng đổ */
+    margin: 10px; /* Khoảng cách giữa các nút */
 }
-#facebookButton i:hover
-{
-    color: #0055ff;
+
+#facebookButton i:hover {
+    color: #0055ff; /* Màu của biểu tượng khi di chuột qua */
 }
+
+/* Định dạng cho nút Instagram */
 #instagramButton {
-    /* display: inline-block; */
-    margin-right: 10px;
-    width: 0px;
-    /* background: #5ac5ef; */
-    border-radius: 50%;
-    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7);
-    margin: 10px;
+    margin-right: 10px; /* Khoảng cách từ phải của nút */
+    width: 0px; /* Độ rộng của nút */
+    border-radius: 50%; /* Đường viền cong */
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7); /* Hiệu ứng bóng đổ */
+    margin: 10px; /* Khoảng cách giữa các nút */
 }
-#instagramButton i:hover 
-{
-    color: palevioletred;
+
+#instagramButton i:hover {
+    color: palevioletred; /* Màu của biểu tượng khi di chuột qua */
 }
+
+/* Định dạng cho nút Messenger */
 #messengerButton {
-    /* display: inline-block; */
-    margin-right: 10px;
-    width: 0px;
-    /* background: #5ac5ef; */
-    border-radius: 50%;
-    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7);
-    margin: 10px;
+    margin-right: 10px; /* Khoảng cách từ phải của nút */
+    width: 0px; /* Độ rộng của nút */
+    border-radius: 50%; /* Đường viền cong */
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7); /* Hiệu ứng bóng đổ */
+    margin: 10px; /* Khoảng cách giữa các nút */
+}
 
+#messengerButton i:hover {
+    color: #60024b; /* Màu của biểu tượng khi di chuột qua */
 }
-#messengerButton i:hover
-{
-    color: #60024b;
-}
+
+/* Định dạng cho nút Twitter */
 #twitterButton {
-    display: inline-block;
-    margin-right: 10px;
-    width: 0px;
-    /* background: #5ac5ef; */
-    border-radius: 50%;
-    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7);
-
+    display: inline-block; /* Hiển thị nút trên cùng một dòng */
+    margin-right: 10px; /* Khoảng cách từ phải của nút */
+    width: 0px; /* Độ rộng của nút */
+    border-radius: 50%; /* Đường viền cong */
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .7); /* Hiệu ứng bóng đổ */
 }
 
-#twitterButton i:hover
-{
-    color: #04118a;
+#twitterButton i:hover {
+    color: #04118a; /* Màu của biểu tượng khi di chuột qua */
 }
+
 
 /* -------------------------------------------------------------------CONTACT-------------------------------------------------------- */
 
 
 /* ========================================================================== */
-@media screen and (max-width: 768px) {
-    .wapper {
-        width: 100%;
-    }
-
-    .header .logo {
-        align-items: center;
-        background-color: #e0e0e0;
-    }
-
-    .header .logo h1 {
-        padding-bottom: 20px;
-        font-size: 20px;
-        color: #850f0f;
-    }
-
-    .logo img {
-        width: 80px;
-    }
-
-    .nav {
-        flex-direction: column;
-        align-items: center;
-        /* Căn giữa các thành phần */
-        background-color: #8a8a8a;
-        font-size: 8px;
-        height: 50px;
-    }
-
-    .nav ul {
-        /* flex-direction: column; */
-        display: flex;
-        /* Chuyển sang hiển thị dạng dọc */
-        padding: 0;
-    }
-
-    .nav ul li {
-        padding: 20px 10px 0 8px;
-        /* Điều chỉnh khoảng cách giữa các mục menu */
-    }
-
-    .nav ul a {
-        line-height: 1;
-        /* Giảm khoảng cách dòng giữa các mục menu */
-        font-size: 12px;
-        /* Giảm kích thước font chữ */
-    }
-
-    .nav .icon {
-        padding: 17px 10px;
-        /* Điều chỉnh khoảng cách giữa menu và các icon */
-        text-align: center;
-        /* Căn giữa các icon */
-    }
-
-    .nav .icon i {
-        padding: 0 10px;
-        /* Điều chỉnh khoảng cách giữa các icon */
-        font-size: 16px;
-        /* Giảm kích thước icon */
-    }
-
-
-    .row {
-        flex-shrink: 0;
-        width: 100%;
-        max-width: 100%;
-        padding-right: calc(var(--bs-gutter-x)* .5);
-        padding-left: calc(var(--bs-gutter-x)* .5);
-        margin-top: var(--bs-gutter-y);
-    }
-
-    /* banner */
-    .banner img {
-        width: 130px;
-    }
-
-    .banner .logobanner {
-        /* flex-direction: column; Chuyển sang hiển thị dạng dọc */
-        align-items: center;
-        /* Căn giữa các thành phần */
-        justify-content: space-around;
-        height: 120px;
-        padding-bottom: 0;
-    }
-
-    .logobanner div {
-        margin-bottom: 20px;
-        /* Khoảng cách giữa các hình ảnh */
-    }
-
-    .heading {
-        padding-top: 0;
-        font-size: 30px;
-    }
-
-    .Feature {
-        height: auto;
-        /* Đặt chiều cao tự động */
-        padding: 30px;
-        /* Thêm padding */
-    }
-
-    .Feature .box .space {
-        justify-content: center;
-    }
-
-    .features .box-container {
-        grid-template-columns: 1fr;
-        /* Chuyển sang hiển thị dạng cột */
-        gap: 1rem;
-        /* Điều chỉnh khoảng cách giữa các box */
-    }
-
-    .box {
-        padding-left: 20px;
-        /* Xóa padding bên trái */
-        text-align: center;
-        /* Căn giữa nội dung */
-        font-size: 10px;
-        justify-content: center;
-    }
-    .box img 
-    {
-        width: 100%;
-        padding: 0;
-    }
-    .box .btn {
-        padding: 10px 50px;
-        /* Điều chỉnh kích thước nút */
-        margin: 20px 0;
-        /* Điều chỉnh khoảng cách giữa các nút */
-        font-size: 10px;
-    }
-
-
-    /* box-content */
-    .sidebar span {
-        padding-left: 10px;
-        font-size: 19px;
-        color: #850f0f;
-    }
-
-    .menu_sidebar {
-        font-size: 10px;
-
-    }
-
-    .row {
-        padding-left: 35px
-    }
-
-    .menu_sidebar .box-submenu .submenu {
-        padding: 15px;
-    }
-
-    .menu_sidebar ul li {
-        /* padding-left: 92px; */
-
-        width: 410px;
-        margin-bottom: 10px;
-        padding: 15px;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    .body {
-        width: 100%;
-        margin-top: 20px;
-        height: 3500px;
-    }
-
-    .fast-food {
-        padding: 0 20px;
-        /* Thêm padding cho phần fast-food */
-    }
-
-    .main-food {
-        /* display: none; */
-        padding: 0 20px;
-    }
-
-    .food1 {
-        flex-direction: column;
-        align-items: center;
-        /* Căn giữa các sản phẩm */
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 30px;
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    .title .card {
-        width: 95%;
-        /* Chiếm toàn bộ chiều rộng của phần tử cha */
-        justify-content: center;
-        margin: 10px;
-    }
-
-    .title {
-        align-items: center;
-    }
-
-    .title .card a {
-        text-align: center;
-        padding-left: 10px;
-    }
-
-    .title .card img {
-        width: 45%;
-        /* Chiếm toàn bộ chiều rộng của ảnh */
-        height: auto;
-        /* Chiều cao tự động tính theo tỉ lệ */
-        padding-top: 10px;
-    }
-
-
-    .title:hover {
-        display: none;
-    }
-
-    .oder {
-        display: none;
-    }
-
-    .oder .gap {
-        flex-wrap: wrap;
-        /* Cho phép các hình ảnh combo xuống dòng khi không đủ không gian */
-        justify-content: center;
-        /* Căn giữa các hình ảnh combo */
-        gap: 10px;
-        /* Khoảng cách giữa các hình ảnh combo */
-        height: auto;
-        /* Chiều cao tự động */
-        padding: 20px 0;
-        /* Thêm khoảng cách ở trên và dưới */
-    }
-
-    .oder .gap img {
-        width: 100%;
-        /* Chiếm toàn bộ chiều rộng của hình ảnh */
-        height: auto;
-        /* Chiều cao tự động tính theo tỉ lệ */
-        max-width: 100%;
-        /* Chiều rộng tối đa là 100% */
-    }
-
-    .footer {
-        flex-direction: column;
-        height: auto;
-        padding-left: 30px;
-    }
-
-    .footer .info-right {
-        padding-left: 34px;
-    }
-
-    .footer .icons i {
-        padding-left: 20px;
-    }
-
-    .ppocta-ft-fix i
-    {
-        font-size: 20px;
-    }
-
-    .contact_fixed i
-    {
-        font-size: 20px;
-    }
-}
